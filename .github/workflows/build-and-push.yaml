@@ -2,8 +2,10 @@ name: build-resume-and-deploy
 
 on:
   push:
+    branches:
+      - "!*"
     tags:
-       - '*'
+      - "v*"
   workflow_dispatch:
 
 jobs:
