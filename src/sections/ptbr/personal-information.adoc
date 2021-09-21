@@ -15,6 +15,6 @@ icon:map-marker[] **Localização:** link:https://goo.gl/maps/CVjggk7kCeM2[{wher
 
 Mídias Sociais / Websites::
 https://github.com/fabioluciano[ icon:github[] Github  , role="external", window="_blank"] | https://www.linkedin.com/in/fabioluciano[ icon:linkedin[] LinkedIn , role="external", window="_blank"] | https://twitter.com/fabioluciano[ icon:twitter[] Twitter  , role="external", window="_blank"] | https://t.me/fabioluciano[ icon:comment[] Telegram , role="external", window="_blank"] +
-https://naoimporta.com[Blog pessoal] - Blog onde trato assuntos relacionados ao desenvolvimento de software e soluções utilizando ferramentas open source; +
-https://fabioluciano.dev[Currículo] - A página alvo deste projeto, que utiliza AsciiDoc, Python, Docker e Shell Script para construção do currículo; +
+https://fabioluciano.dev[Blog Pessoal] - Blog onde trato assuntos relacionados ao desenvolvimento de software e soluções utilizando ferramentas open source; +
+https://me.fabioluciano.dev[Currículo] - A página alvo deste projeto, que utiliza AsciiDoc, Python, Docker e Shell Script para construção do currículo; +
 https://integr8.me[Integr8] - Projeto open source voltado a implantação de esteiras de Integração / Implantação / Qualidade contínua;
