@@ -1,0 +1,6 @@
+*.pdf
+*.pyc
+output
+.vscode
+src/resources/data/*.adoc
+*.env

@@ -1,0 +1,67 @@
+[[education]]
+
+ifdef::backend-html5[]
+== icon:graduation-cap[] Acadêmico
+endif::[]
+
+ifdef::backend-pdf[]
+== Acadêmico
+endif::[]
+
+--
+**Arquitetura de Software Distribuído** - Pós Graduação +
+icon:building[title="Instituição"] Pontifícia Universidade Católica de Minas Gerais icon:calendar[title="Período"] 2019 até o momento
+--
+
+--
+**Análise e Projeto de Sistemas** - Extensão +
+icon:building[title="Instituição"] Centro Universitário IESB icon:calendar[title="Período"] 2012 - 2012
+--
+
+--
+**Suporte de Tecnologia da Informação** - Extensão +
+icon:building[title="Instituição"] Centro Universitário IESB icon:calendar[title="Período"] 2013 - 2013
+--
+
+--
+**Análise e Desenvolvimento de Sistemas** - Graduação +
+icon:building[title="Instituição"] Centro Universitário IESB icon:calendar[title="Período"] 2012 - 2014 +
+--
+
+[[events]]
+ifdef::backend-html5[]
+== icon:users[] Eventos e treinamentos ministrados
+endif::[]
+
+ifdef::backend-pdf[]
+== Eventos e treinamentos ministrados
+endif::[]
+
+--
+**Utilização de GraphQL com VueJS para construção de APIs** +
+icon:user[title="Participação"] Palestrante   icon:calendar[title="Data"] 02/2020  icon:map-marker[title="Localização"] Canoas / RS + 
+**Materiais**: {link-presentation-graphql}[Apresentação, role="external", window="_blank"] | {link-support-material-graphql}[Material de Apoio, role="external", window="_blank"]
+--
+
+--
+**Containers para pessoas ansiosas** +
+icon:user[title="Participação"] Palestrante icon:calendar[title="Período"] 01/2020 icon:map-marker[] Brasília / DF +
+**Materiais**: {link-presentation-container}[Apresentação, role="external", window="_blank"] | {link-support-material-containers}[Material de Apoio, role="external", window="_blank"]
+--
+
+--
+**Containers para pessoas ansiosas** +
+icon:user[title="Participação"] Palestrante icon:calendar[title="Período"] 11/2019 icon:map-marker[] Campina Grande / PB +
+**Materiais**: {link-presentation-container}[Apresentação, role="external", window="_blank"] | {link-support-material-containers}[Material de Apoio, role="external", window="_blank"]
+--
+
+ifdef::backend-html5[]
+== icon:language[] Idiomas
+endif::[]
+
+ifdef::backend-pdf[]
+== Idiomas
+endif::[]
+**Português** Língua nativa +
+**Inglês**: Leitura(fluente), escrita(intermediário) e conversação(intermediário) +
+**Espanhol**: Leitura(basico), escrita(basico) e conversação(basico)

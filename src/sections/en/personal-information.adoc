@@ -1,0 +1,14 @@
+[[informacoes-pessoais]]
+ifdef::backend-html5[]
+== icon:user[] Personal Information
+endif::[]
+
+ifdef::backend-pdf[]
+== Personal Information
+endif::[]
+
+Contacts::
+icon:envelope[] **E-mail:** {email} +
+icon:phone[] **Telephone:** {telephone} +
+icon:skype[] **Skype:** {skype-id} +
+icon:map-marker[] **Location:** link:https://goo.gl/maps/CVjggk7kCeM2[{whereami}, role="external", window="_blank"]

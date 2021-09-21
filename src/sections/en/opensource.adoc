@@ -1,0 +1,9 @@
+[[opensource]]
+
+ifdef::backend-html5[]
+== icon:code[] Open Source
+endif::[]
+
+ifdef::backend-pdf[]
+== Open Source
+endif::[]

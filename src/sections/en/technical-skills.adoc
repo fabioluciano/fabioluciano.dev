@@ -1,0 +1,9 @@
+[[technical-skills]]
+
+ifdef::backend-html5[]
+== icon:cogs[] Technical Skills
+endif::[]
+
+ifdef::backend-pdf[]
+== Technical Skills
+endif::[]

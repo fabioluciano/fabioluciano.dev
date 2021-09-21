@@ -1,0 +1,32 @@
+include::variables.adoc[]
+:!toc-title:
+
+ifdef::backend-pdf[:notitle:]
+ifdef::backend-pdf[:!toc2:]
+ifdef::backend-pdf[]
+[discrete]
+= {doctitle}
+endif::[]
+
+ifdef::backend-html5[]
+[NOTE]
+====
+Esta página foi escrita no formato `AsciiDOC`. Seu código fonte está disponível em https://github.com/fabioluciano/me.fabioluciano.dev[ icon:github[] Repositório do currículo, role="external", window="_blank"]. +
+Você pode fazer o download do link:{link-resume-ptbr-pdf}[ icon:file-pdf-o[] PDF Completo, role="external", window="_blank"], ou link:{link-resume-ptbr-pdf-condensed}[ icon:file-pdf-o[] PDF Resumido, role="external", window="_blank"]. +
+Há uma versão em inglês disponível. Você pode acessar o link:{link-resume-en}[ icon:link[] Website], como esta página, ou a versão em link:{link-resume-en-pdf}[ icon:file-pdf-o[] PDF, role="external", window="_blank"].
+====
+endif::[]
+
+include::{includedir}/ptbr/cover-letter.adoc[]
+
+include::{includedir}/ptbr/personal-information.adoc[]
+
+include::{includedir}/ptbr/education.adoc[]
+
+include::{includedir}/ptbr/certifications.adoc[]
+
+include::{includedir}/ptbr/technical-skills.adoc[]
+
+include::{includedir}/ptbr/opensource.adoc[]
+
+include::{includedir}/ptbr/professional-experience.adoc[]

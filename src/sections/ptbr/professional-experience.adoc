@@ -1,0 +1,178 @@
+[[professional-experience]]
+
+ifdef::backend-html5[]
+== icon:suitcase[] Experiências profissionais
+endif::[]
+
+ifdef::backend-pdf[]
+== Experiências profissionais
+endif::[]
+
+--
+**Líder Técnico - Especialista DevOps** +
+icon:calendar[title="Período"] 07/2020 até o **Presente** +
+icon:building[title="Empregador"] {link-picpay}[PicPay, role="external", window="_blank"] +
+icon:chevron-circle-right[title="Departamento"] Developer Tools
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Atividades executadas
+[%collapsible]
+====
+endif::[]
+- ...;
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Tecnologias:: Cloud Computing, AWS, Pipeline, Integração Contínua, Entrega Contínua, Qualidade Contínua.
+--
+
+'''
+
+
+--
+**Arquiteto de Soluções** +
+icon:calendar[title="Período"] 01/2018 até o 07/2020 +
+icon:building[title="Empregador"] {link-sonda}[SONDA IT, role="external", window="_blank"] +
+icon:chevron-circle-right[title="Departamento|"] Fábrica de Software
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Atividades executadas
+[%collapsible]
+====
+endif::[]
+- Criação de infraestrutura como código utilizando o Terraform e CloudFormation para implantação de soluções utilizadas por todos os clientes da Fábrica de Software;
+- Implantação e configuração de ferramentas de integração e entrega contínua em ambiente empresarial (Jenkins, SonarQube, Sonatype Nexus, Gitlab, etc.);
+- Análise, implantação e configuração de elementos para implantação de balanceamento de carga e escalabilidade em ferramentas de integração/entregra contínua e aplicações utilizando proxy reverso (HAProxy) e programaticamente, utilizando suas APIs.
+- Implementação e implantação da automatização de configurações e propriedades em ferramentas utilizando Apache Groovy;
+- Implantação do conceito de núvem privada para orquestração de recursos sob demanda;
+- Implantação de nuvens privadas e aplicações utilizando infraestrutura como código (IaC), com Ansible, Fabric e Docker Compose;
+- Composição de ambientes de integração/entrega contínua em ambientes distribuídos geograficamente;
+- Definição de processos de integração/entrega contínua de aplicações, bem como definições de requisitos mínimos de segurança e qualidade em aplicações;
+- Orquestração do processo de integração/entrega contínua utilizando ferramentas (Jenkins, SonarQube, Sonatype Nexus, Gitlab, etc.);
+- Implantação da automatização de testes unitários(JUnit,PHPUnit, Karma, Jasmine), funcionais(Cucumber, Codeception, Behat, Cucumberjs) e de carga(JMeter) em aplicações empresariais;
+- Projeto e implantação de soluções baseadas em núvem utilizando os provedores Amazon Web Services e Microsoft Azure;
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Tecnologias:: Cloud Computing, AWS, Azure, Terraform, Ansible, Docker, Java, PHP, CAS, Microserviços, DevOPS, Jenkins, Angular, Jenkins, GitLab, Nexus, SonarQube, Pipeline, Integração Contínua, Entrega Contínua, Qualidade Contínua e LogStash.
+--
+
+'''
+
+--
+**Arquiteto de Software** +
+icon:calendar[title="Período"] 07/2016 até 12/2017 +
+icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
+icon:chevron-circle-right[title="Departamento|"] {link-ministry-mctic}[Ministério da Ciência e Tecnologia]
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Atividades executadas
+[%collapsible]
+====
+endif::[]
+- Desenvolvimento e manutenção de uma arquitetura arquitetura com microserviços;
+- Implantação das ferramentas para orientar a implantação da filosofia DevOps no órgão;
+- Análise dos logs dos microserviços, bem como a criação de gatilhos da stack de automação utilizando o LogStash;
+- Monitoramento dos microserviços utilizando o Prometheus;
+- Criação de pipelines de integração/entrega/qualidade contínua em projetos Java(JEE), Angular.js e PHP;
+- Criação de containers Docker para orquestração dos microserviços;
+- Implantação do balanceamento de carga e alta disponibilidade com o HaProxy;
+- Implementação da implantação automatizada dos microserviços utilizando o Ansible;
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+
+Tecnologias:: Java, PHP, CAS, Microserviços, DevOPS, Jenkins, Angular, Jenkins, GitLab, Nexus, SonarQube, Pipeline, Integração Contínua, Entrega Contínua, Qualidade Contínua e LogStash.
+--
+
+'''
+
+--
+**Arquiteto de Software** +
+icon:calendar[title="Período"] 04/2016 a 07/2016 +
+icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
+icon:chevron-circle-right[title="Departamento|"] {link-ministry-mdic}[Ministério do Desenvolvimento Indústria e Comércio]
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Atividades executadas
+[%collapsible]
+====
+endif::[]
+- Desenvolvimento e manutenção de uma arquitetura orientada a serviços (SOA);
+- Implementação arquitetural de sistemas utilizando Phalcon PHP, Symfony e Laravel;
+- Implementação de componentes DAO para habilitação de reutilização em todas as arquiteturas;
+- Desenvolvimento e implantação de uma arquitetura AngularJS;
+- Documentação arquitetural de sistemas construídos;
+- Documentação de implantação das aplicações;
+- Manutenção e criação de Jobs no Jenkins;
+- Estabelecimento de diretrizes de seguranças a serem seguidas pelos softwares desenvolvidos;
+- Definição de políticas de qualidade a serem avaliadas pela análise estática;
+- Monitoramento e manutenção de padrões de qualidade de software com o SonarQube;
+- Gerenciamento de versões e candidatas usando o Sonatype Nexus;
+- Criação de provas de conceitos de containerização de aplicações.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+
+Tecnologias:: SOA, PHP, Phalcon, Symfony, Laravel, DAO, Arquitetura, AngularJS, Jenkins, SonarQube, Sonatype Nexus, Docker, Container.
+--
+
+'''
+
+--
+**Arquiteto de Software** +
+icon:calendar[title="Período"] 03/2015 a 12/2015 +
+icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
+icon:chevron-circle-right[title="Departamento|"] {link-ministry-integration}[Ministério da Integração Nacional]
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Atividades executadas
+[%collapsible]
+====
+endif::[]
+- Desenvolvimento e manutenção de arquiteturas orientadas a serviços (SOA);
+- Desenvolvimento de duas arquiteturas para o Backend. Uma usando o Laravel para a construção de aplicações com PHP, e outra, em JAVA, utilizando o framework Spring;
+- Desenvolvimento de uma arquitetura frontend utilizando AngularJS;
+- Criação de uma ferramenta de scaffold de componentes AngularJs;
+- Documentação arquitetural de sistemas construídos;
+- Manutenção e criação de Jobs no Jenkins;
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+
+Tecnologias:: SOA, PHP, Java, Laravel, Spring, AngularJS, Jenkins.
+--
+
+'''
+
+--
+**Desenvolvedor PHP** +
+icon:calendar[title="Período"] 02/2014 a 03/2015 +
+icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
+icon:chevron-circle-right[title="Departamento|"] {link-ministry-integration}[Ministério da Integração Nacional]
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Atividades executadas
+[%collapsible]
+====
+endif::[]
+- Desenvolvimento e manutenção do backend de softwares em PHP, utilizando Zend, Symfony e Laravel como framework;
+- Desenvolvimento e manutenação do frontend utilizando  HTML, Javascript (JQuery) e CSS.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+
+Tecnologias:: PHP, Zend Framework, Symfony, Laravel, HTML, Javascript, JQuery e CSS.
+--

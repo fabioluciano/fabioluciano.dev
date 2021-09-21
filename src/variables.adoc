@@ -1,0 +1,68 @@
+:toc2:
+:toclevels: 2
+:icons: font
+:iconfont-cdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+:linkattrs:
+:sectanchors:
+:nofooter:
+:sectlink:
+:experimental:
+:source-language: asciidoc
+:includedir: sections
+:doc-version: 1.0
+:author: Fábio Luciano
+:full-name: Fábio Luciano Nogueira de Góis
+:authorinitials: F.L.N.G.
+:source-highlighter: pygments
+:google-analytics-account: UA-160509005-1
+:doctitle: {full-name}
+
+:with_activities: true
+
+:skype-id: fabiolucianodf
+:telephone: 55 (61) 981455884
+:email: fabio@naoimporta.com
+:facebook: fabioluciano
+:instagram: fabioluciano
+:twitter: fabioluciano
+:linkedin: fabioluciano
+:github: fabioluciano
+:whereami: 'Brasília, Brasil'
+
+
+:link-resume-en: /en/
+:link-resume-ptbr: /
+
+:link-resume-en-pdf: /en/resume.pdf
+:link-resume-en-pdf-condensed: /en/resume-condensed.pdf
+
+:link-resume-ptbr-pdf: /resume.pdf
+:link-resume-ptbr-pdf-condensed: /resume-condensed.pdf
+
+
+:link-certification-zend-site: http://www.zend.com/en/yellow-pages/ZEND026303
+:link-certification-lpic-ot-site: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000397664/sfuy2nckbr
+:link-certification-aws: https://aw.certmetrics.com/amazon/public/verification.aspx
+
+:link-fabrica-ideias: http://www.fabricadeideias.com.br/
+:link-gestao-ti: http://www.gestaoti.com.br/
+:link-ctis: http://www.ctis.com.br/
+:link-ministry-integration: http://www.integracao.gov.br/
+:link-ministry-mdic: http://www.mdic.gov.br/
+:link-ministry-mctic: http://www.mctic.gov.br
+:link-sonda: https://www.sonda.com/br/
+:link-picpay: https://picpay.com/
+
+:link-phpdocbridge: https://github.com/phpdocbrbridge
+:link-phpdoc-tranlation-page: http://doc.php.net/revcheck.php?p=files&user=fabioluciano&lang=pt_BR
+:link-phppeople: http://people.php.net/fabioluciano
+
+:link-terraform-integr8: https://registry.terraform.io/modules/integr8
+:link-ansible-galaxy-fabioluciano: https://galaxy.ansible.com/integr8
+:link-docker-hub-integr8: https://hub.docker.com/u/integr8
+:link-docker-hub-fabioluciano: https://hub.docker.com/u/fabioluciano
+
+:link-support-material-containers: https://containers-for-anxious-people.integr8.app/
+:link-presentation-container: https://containers-for-anxious-people.integr8.app/presentation.html
+:link-presentation-graphql: https://containers-for-anxious-people.integr8.app/presentation.html#/_graphql
+:link-support-material-graphql: https://containers-for-anxious-people.integr8.app/#_graphql

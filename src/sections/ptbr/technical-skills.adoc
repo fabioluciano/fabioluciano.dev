@@ -1,0 +1,70 @@
+[[technical-skills]]
+
+ifdef::backend-html5[]
+== icon:cogs[] Conhecimentos Técnicos
+endif::[]
+
+ifdef::backend-pdf[]
+== Conhecimentos Técnicos
+endif::[]
+
+* Planejamento e execução de migração de infraestrutura _on premises_ para a cloud;
+* Definição de redes virtuais, bem como políticas de segurança e identidades em ambiente cloud;
+* Provisionamento manual e automatizado de recursos computacionais em ambiente cloud;
+* Containerização de aplicações de maneira eficiente;
+* Clusterização de aplicações containerizadas;
+
+=== Arquitetura de Soluções
+Arquitetura DevOps::
+**Ferramentas**: Terraform, Vault, Consul, Vagrant, Packer, Ansible, Fabric +
+**Cluster de Aplicação**: Kubernetes, Docker Swarm; +
+**Ferramentas para CI**: Jenkins, Travis; +
+**Ferramentas para CD**: Spinnaker; +
+**Outras ferramentas**: Sonarqube, Sonatype Nexus, Artifactory; +
+**Ferramentas de monitoramento**: Prometheus, Elastic Stack(Elasticsearch, Logstash, Kibana), Fluentd; +
+**Ferramentas de construção**: Makefile, Grunt, Gulp, Webpack, Maven, Gradle, Composer e Rake; +
+**Estratégias de implantação**: Blue/Green, Canary, A/B, Rolling Update; +
+**Container Runtimes**: CRI-O, containerd e Docker; +
+
+Arquitetura Cloud::
+Amazon Web Services(AWS):::
+**Rede**: VPC, Internet Gateway, Subnets, Network ACLs, Security Groups, VPNs, Peering Connection, CloudFront, Route 53, API Gateway; +
+**Computação**: EC2, Lambda, Serverless; +
+**Armazenamento**: S3, EBS, EFS, AWS Backup; +
+**Banco de dados**: RDS, DynamoDB, ElastiCache; +
+**Desenvolvimento/CI/CD**: CodeStar, CodeCommit, CodeBuild, CodeDeploy, CodePipeline, Cloud9, X-Ray; +
+**Gerenciamento e Governança**: AWS Organizations, Cloud Watch, Cloud Formation, Cloud Trail; +
+**Segurança, Identidade e Conformidade**: IAM, Cognito, Secrets Manager, Directory Service, Guard Duty; +
+**Integração de Aplicativos**: Amazon MQ, Simple Notification Service, Simple Queue Service, SWF; +
+**Gerenciamento de Custos**: AWS Cost Explorer, AWS Budgets; +
+**Contêineres**: Elastic Container Registry, Elastic Container Service, Elastic Kubernetes Service.
+
+// Microsoft Azure:::
+// **Rede**: 
+
+=== Arquitetura e Desenvolvimento de Software
+**Linguagens de Programação**:: PHP, Java, JavaScript, Shell Script, Python, C, Perl, (X)HTML e CSS
+
+PHP::
+**Diversidade de versão**: PHP 4, 5 e 7; +
+**Frameworks**: Laravel 4/5, Zend Framework, Symfony, CakePHP, CodeIgniter, Kohana, Smarty Template Engine, FuelPHP e lithium; +
+**CMS**: Drupal, Joomla e Wordpress; +
+**Ferramentas e QA**: APC, PHPUnit, Xdebug, phpDocumentor e PEAR/PECL.
+
+Javascript / ECMAScript::
+**Metalinguagens**: TypeScript e CoffeeScript; +
+**Frameworks**: BackboneJS, AngularJS, Angular.io, VueJS(Vuex) e Ember.js; +
+**Template Engines**: Jade, Haml, Handlebars e EJS; +
+**Task Runner**: Grunt, Gulp e Brocoli; +
+**Outros**: Yeoman, Sass e  Less
+
+=== Administração de Sistemas
+* Instalação, configuração, manutenção e tunning em:
+** Servidores linux(Derivados do Debian, RHEL, OpenSuse e Alpine);
+** Servidores de aplicação como Apache Httpd, Nginx, Lighttpd, Cherooke, Jboss AS e Wildfly;
+** Servidores de bancos de dados como MySQL, PostgreSQL and Oracle Database;
+
+=== Outras
+**Banco de dados**: Extensa experiência com ANSI SQL, MySQL, PostgreSQL, Oracle, SQLite, NoSQL (MongoDB, CouchDB, etc). +
+**Melhores práticas**: Extensa experiência com os princípios da orientação a objetos e padrões de projeto. +
+**Outras**: Expressões Regulares, Web Services (XML/JSON-RPC, REST, SOAP, GraphQL, e etc.).

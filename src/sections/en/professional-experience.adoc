@@ -1,0 +1,9 @@
+[[professional-experience]]
+
+ifdef::backend-html5[]
+== icon:suitcase[] Work Experiences
+endif::[]
+
+ifdef::backend-pdf[]
+== Work Experiences
+endif::[]
