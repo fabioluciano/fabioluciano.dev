@@ -9,11 +9,9 @@
         "changelogFile": "CHANGELOG.md"
       }
     ],
-    [
-      "@semantic-release/github",
-      {
-        "successComment": false
-      }
-    ]
+    ["@semantic-release/github", {
+      "successComment": false,
+      "failComment": false,
+    }]
   ]
 }
