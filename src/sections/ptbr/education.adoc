@@ -14,8 +14,8 @@ icon:building[title="Instituição"] Pontifícia Universidade Católica de Minas
 --
 
 --
-**Análise e Projeto de Sistemas** - Extensão +
-icon:building[title="Instituição"] Centro Universitário IESB icon:calendar[title="Período"] 2012 - 2012
+**Análise e Desenvolvimento de Sistemas** - Graduação +
+icon:building[title="Instituição"] Centro Universitário IESB icon:calendar[title="Período"] 2012 - 2014 +
 --
 
 --
@@ -24,8 +24,8 @@ icon:building[title="Instituição"] Centro Universitário IESB icon:calendar[ti
 --
 
 --
-**Análise e Desenvolvimento de Sistemas** - Graduação +
-icon:building[title="Instituição"] Centro Universitário IESB icon:calendar[title="Período"] 2012 - 2014 +
+**Análise e Projeto de Sistemas** - Extensão +
+icon:building[title="Instituição"] Centro Universitário IESB icon:calendar[title="Período"] 2012 - 2012
 --
 
 [[events]]
@@ -39,7 +39,7 @@ endif::[]
 
 --
 **Utilização de GraphQL com VueJS para construção de APIs** +
-icon:user[title="Participação"] Palestrante   icon:calendar[title="Data"] 02/2020  icon:map-marker[title="Localização"] Canoas / RS + 
+icon:user[title="Participação"] Palestrante icon:calendar[title="Data"] 02/2020  icon:map-marker[title="Localização"] Canoas / RS + 
 **Materiais**: {link-presentation-graphql}[Apresentação, role="external", window="_blank"] | {link-support-material-graphql}[Material de Apoio, role="external", window="_blank"]
 --
 
