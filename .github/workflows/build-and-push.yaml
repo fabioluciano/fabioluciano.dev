@@ -1,8 +1,9 @@
 name: build-resume-and-deploy
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+       - '*'
   workflow_dispatch:
 
 jobs:
