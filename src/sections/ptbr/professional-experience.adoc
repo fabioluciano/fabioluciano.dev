@@ -30,7 +30,6 @@ Tecnologias:: Cloud Computing, AWS, Pipeline, Integração Contínua, Entrega Co
 
 '''
 
-
 --
 **Arquiteto de Soluções** +
 icon:calendar[title="Período"] 01/2018 até o 07/2020 +
