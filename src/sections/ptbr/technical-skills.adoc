@@ -18,8 +18,8 @@ endif::[]
 Arquitetura DevOps::
 **Ferramentas**: Terraform, Vault, Consul, Vagrant, Packer, Ansible, Fabric +
 **Cluster de Aplicação**: Kubernetes, Docker Swarm; +
-**Ferramentas para CI**: Jenkins, Travis; +
-**Ferramentas para CD**: Spinnaker; +
+**Ferramentas para CI**: Jenkins, Travis, Tekton, JenkinsX; +
+**Ferramentas para CD**: Spinnaker, Harness, ArgoCD; +
 **Outras ferramentas**: Sonarqube, Sonatype Nexus, Artifactory; +
 **Ferramentas de monitoramento**: Prometheus, Elastic Stack(Elasticsearch, Logstash, Kibana), Fluentd; +
 **Ferramentas de construção**: Makefile, Grunt, Gulp, Webpack, Maven, Gradle, Composer e Rake; +
@@ -39,14 +39,11 @@ Amazon Web Services(AWS):::
 **Gerenciamento de Custos**: AWS Cost Explorer, AWS Budgets; +
 **Contêineres**: Elastic Container Registry, Elastic Container Service, Elastic Kubernetes Service.
 
-// Microsoft Azure:::
-// **Rede**: 
-
 === Arquitetura e Desenvolvimento de Software
-**Linguagens de Programação**:: PHP, Java, JavaScript, Shell Script, Python, C, Perl, (X)HTML e CSS
+**Linguagens de Programação**:: PHP, Python, Java, JavaScript, Shell Script, C, Perl, (X)HTML e CSS
 
 PHP::
-**Diversidade de versão**: PHP 4, 5 e 7; +
+**Diversidade de versão**: PHP 7 e 8; +
 **Frameworks**: Laravel 4/5, Zend Framework, Symfony, CakePHP, CodeIgniter, Kohana, Smarty Template Engine, FuelPHP e lithium; +
 **CMS**: Drupal, Joomla e Wordpress; +
 **Ferramentas e QA**: APC, PHPUnit, Xdebug, phpDocumentor e PEAR/PECL.
