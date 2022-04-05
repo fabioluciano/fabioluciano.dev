@@ -4,3 +4,4 @@ output
 .vscode
 src/resources/data/*.adoc
 *.env
+.DS_Store

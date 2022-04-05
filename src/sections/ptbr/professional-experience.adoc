@@ -1,3 +1,4 @@
+<<<
 [[professional-experience]]
 
 ifdef::backend-html5[]
@@ -9,7 +10,7 @@ ifdef::backend-pdf[]
 endif::[]
 
 --
-**Líder Técnico - Especialista DevOps** +
+**Líder Técnico - Especialista** +
 icon:calendar[title="Período"] 07/2020 até o **Presente** +
 icon:building[title="Empregador"] {link-picpay}[PicPay, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento"] Developer Experience
@@ -20,12 +21,20 @@ ifdef::backend-html5[]
 [%collapsible]
 ====
 endif::[]
-- ...;
+- Liderança técnica, auxiliando os colegas na execução das atividades, bem como projetar e atender os planos de desenvolvimento individuais;
+- Documentar e disseminar procedimentos e ferramental utilizado pelo time;
+- Projetar, implementar e implantar a nova estratégia e ferramenta de implantação contínua da companhia utilizando `Helm` e `Harness`;
+- Projetar, implementar e implantar a nova estratégia e ferramenta de integração contínua utilizando o `Tekton` Pipelines;
+- Execuções de provas de conceitos(POCs/MVPs), de esteiras de verificação e validação contínua para diversos tiers/linguagens;
+- Criação _playbooks_ utilizando `Ansible`, para auxiliar a migração de estratégias de integração e deploy contínuo;
+- Apresentações de novas funcionalidades disponíveis nas ferramentas mantidas;
+- Disseminação de boas práticas a cerca da construção e governança de código-fonte e `API`s;
+- Implementação e implantação de ferramentas em linha de comando(`CLI`) para diminuição de _toil_.
 ifdef::backend-html5[]
 ====
 endif::[]
 endif::[]
-Tecnologias:: Cloud Computing, AWS, Pipeline, Integração Contínua, Entrega Contínua, Qualidade Contínua.
+Palavras-chave:: Cloud Computing, AWS, Pipelines, Integração Contínua, Entrega Contínua, Qualidade Contínua, Rundeck, Kubernetes, Helm, Harness, Tekton.
 --
 
 '''
@@ -57,7 +66,7 @@ ifdef::backend-html5[]
 ====
 endif::[]
 endif::[]
-Tecnologias:: Cloud Computing, AWS, Azure, Terraform, Ansible, Docker, Java, PHP, CAS, Microserviços, DevOPS, Jenkins, Angular, Jenkins, GitLab, Nexus, SonarQube, Pipeline, Integração Contínua, Entrega Contínua, Qualidade Contínua e LogStash.
+Palavras-chave:: Cloud Computing, AWS, Azure, Terraform, Ansible, Docker, Java, PHP, CAS, Microserviços, DevOPS, Jenkins, Angular, Jenkins, GitLab, Nexus, SonarQube, Pipeline, Integração Contínua, Entrega Contínua, Qualidade Contínua e LogStash.
 --
 
 '''
@@ -87,7 +96,7 @@ ifdef::backend-html5[]
 endif::[]
 endif::[]
 
-Tecnologias:: Java, PHP, CAS, Microserviços, DevOPS, Jenkins, Angular, Jenkins, GitLab, Nexus, SonarQube, Pipeline, Integração Contínua, Entrega Contínua, Qualidade Contínua e LogStash.
+Palavras-chave:: Java, PHP, CAS, Microserviços, DevOPS, Jenkins, Angular, Jenkins, GitLab, Nexus, SonarQube, Pipeline, Integração Contínua, Entrega Contínua, Qualidade Contínua e LogStash.
 --
 
 '''
@@ -121,7 +130,7 @@ ifdef::backend-html5[]
 endif::[]
 endif::[]
 
-Tecnologias:: SOA, PHP, Phalcon, Symfony, Laravel, DAO, Arquitetura, AngularJS, Jenkins, SonarQube, Sonatype Nexus, Docker, Container.
+Palavras-chave:: SOA, PHP, Phalcon, Symfony, Laravel, DAO, Arquitetura, AngularJS, Jenkins, SonarQube, Sonatype Nexus, Docker, Container.
 --
 
 '''
@@ -149,7 +158,7 @@ ifdef::backend-html5[]
 endif::[]
 endif::[]
 
-Tecnologias:: SOA, PHP, Java, Laravel, Spring, AngularJS, Jenkins.
+Palavras-chave:: SOA, PHP, Java, Laravel, Spring, AngularJS, Jenkins.
 --
 
 '''
@@ -173,5 +182,5 @@ ifdef::backend-html5[]
 endif::[]
 endif::[]
 
-Tecnologias:: PHP, Zend Framework, Symfony, Laravel, HTML, Javascript, JQuery e CSS.
+Palavras-chave:: PHP, Zend Framework, Symfony, Laravel, HTML, Javascript, JQuery e CSS.
 --

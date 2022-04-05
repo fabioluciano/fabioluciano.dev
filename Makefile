@@ -12,4 +12,4 @@ generate_github_informations:
   )
 
 generate_pdf:
-	docker run -it -v `pwd`:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf -a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml -a pdf-fontsdir=src/resources/fonts -o ./output/resume-raw.pdf src/resume-ptbr.adoc
+	docker run -it  --platform linux/amd64 -v `pwd`:/documents/ asciidoctor/docker-asciidoctor asciidoctor-pdf -a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml -a pdf-fontsdir=src/resources/fonts -o ./output/resume-raw.pdf src/resume-ptbr.adoc
