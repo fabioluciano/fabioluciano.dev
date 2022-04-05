@@ -11,7 +11,7 @@ endif::[]
 
 --
 **Líder Técnico - Especialista** +
-icon:calendar[title="Período"] 07/2020 até o **Presente** +
+icon:calendar[title="Período"] 07/2020 até o 01/2022 +
 icon:building[title="Empregador"] {link-picpay}[PicPay, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento"] Developer Experience
 
