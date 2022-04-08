@@ -9,8 +9,8 @@ ifdef::backend-pdf[]
 == Experiências profissionais
 endif::[]
 
+=== Especialista
 --
-**Líder Técnico - Especialista** +
 icon:calendar[title="Período"] 07/2020 até o 01/2022 +
 icon:building[title="Empregador"] {link-picpay}[PicPay, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento"] Developer Experience
@@ -39,8 +39,8 @@ Palavras-chave:: Cloud Computing, AWS, Pipelines, Integração Contínua, Entreg
 
 '''
 
+=== Arquiteto de Soluções
 --
-**Arquiteto de Soluções** +
 icon:calendar[title="Período"] 01/2018 até o 07/2020 +
 icon:building[title="Empregador"] {link-sonda}[SONDA IT, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento|"] Fábrica de Software
@@ -71,8 +71,8 @@ Palavras-chave:: Cloud Computing, AWS, Azure, Terraform, Ansible, Docker, Java, 
 
 '''
 
+=== Arquiteto de Software
 --
-**Arquiteto de Software** +
 icon:calendar[title="Período"] 07/2016 até 12/2017 +
 icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento|"] {link-ministry-mctic}[Ministério da Ciência e Tecnologia]
@@ -101,8 +101,8 @@ Palavras-chave:: Java, PHP, CAS, Microserviços, DevOPS, Jenkins, Angular, Jenki
 
 '''
 
+=== Arquiteto de Software
 --
-**Arquiteto de Software** +
 icon:calendar[title="Período"] 04/2016 a 07/2016 +
 icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento|"] {link-ministry-mdic}[Ministério do Desenvolvimento Indústria e Comércio]
@@ -135,8 +135,8 @@ Palavras-chave:: SOA, PHP, Phalcon, Symfony, Laravel, DAO, Arquitetura, AngularJ
 
 '''
 
+=== Arquiteto de Software
 --
-**Arquiteto de Software** +
 icon:calendar[title="Período"] 03/2015 a 12/2015 +
 icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento|"] {link-ministry-integration}[Ministério da Integração Nacional]
@@ -163,8 +163,8 @@ Palavras-chave:: SOA, PHP, Java, Laravel, Spring, AngularJS, Jenkins.
 
 '''
 
+=== Desenvolvedor PHP
 --
-**Desenvolvedor PHP** +
 icon:calendar[title="Período"] 02/2014 a 03/2015 +
 icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento|"] {link-ministry-integration}[Ministério da Integração Nacional]
