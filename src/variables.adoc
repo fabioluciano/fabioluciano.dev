@@ -21,7 +21,7 @@
 
 :skype-id: fabiolucianodf
 :telephone: 55 (61) 981455884
-:email: oi@fabioluciano.dev
+:email: ola@fabioluciano.dev
 :facebook: fabioluciano
 :instagram: fabioluciano
 :twitter: fabioluciano
