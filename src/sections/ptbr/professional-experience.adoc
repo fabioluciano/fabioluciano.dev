@@ -9,9 +9,9 @@ ifdef::backend-pdf[]
 == Experiências profissionais
 endif::[]
 
-=== Especialista
+=== Tech Lead
 --
-icon:calendar[title="Período"] 07/2020 até o 01/2022 +
+icon:calendar[title="Período"] 07/2020 até o momento +
 icon:building[title="Empregador"] {link-picpay}[PicPay, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento"] Developer Experience
 
@@ -28,7 +28,7 @@ endif::[]
 - Execuções de provas de conceitos(POCs/MVPs), de esteiras de verificação e validação contínua para diversos tiers/linguagens;
 - Criação _playbooks_ utilizando `Ansible`, para auxiliar a migração de estratégias de integração e deploy contínuo;
 - Apresentações de novas funcionalidades disponíveis nas ferramentas mantidas;
-- Disseminação de boas práticas a cerca da construção e governança de código-fonte e `API`s;
+- Disseminação de boas práticas a cerca da construção e governança de código-fonte e `API` s;
 - Implementação e implantação de ferramentas em linha de comando(`CLI`) para diminuição de _toil_.
 ifdef::backend-html5[]
 ====
