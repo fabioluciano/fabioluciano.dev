@@ -18,3 +18,4 @@ https://github.com/fabioluciano[ icon:github[] Github  , role="external", window
 https://fabioluciano.dev[Blog Pessoal] - Blog onde trato assuntos relacionados ao desenvolvimento de software e soluções utilizando ferramentas open source; +
 https://me.fabioluciano.dev[Currículo] - A página alvo deste projeto, que utiliza AsciiDoc, Python, Docker e Shell Script para construção do currículo; +
 https://integr8.me[Integr8] - Projeto open source voltado a implantação de esteiras de Integração / Implantação / Qualidade contínua;
+https://inputs.fabioluciano.dev[Inputs] - Projeto para divulgação de eletrônicos(keyboards, switches e keycaps) open source;
