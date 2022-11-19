@@ -46,8 +46,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       volumes:
-        - ${{ env.GITHUB_WORKSPACE}}/src/python:/app
-        - ${{ env.GITHUB_WORKSPACE }}/src/resources/data:/app/resources/data
+        - ./src/python:/app
+        - ./src/resources/data:/app/resources/data
     steps:
       - name: Send generated files to cache
         uses: actions/upload-artifact@master
