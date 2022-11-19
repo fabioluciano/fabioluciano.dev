@@ -24,23 +24,23 @@ optimize_pdfs: optimize_en_pdfs optimize_ptbr_pdfs
 execute_scripts: ## Execute python code for generate informations
 	@docker build -t python-with-poetry -f src/python/Dockerfile . && \
 	docker run --rm -e "GITHUB_TOKEN=${GITHUB_TOKEN}" \
-	-v `pwd`/src/python:/app \
-	-v `pwd`/src/resources/data:/app/resources/data python-with-poetry
+		-v `pwd`/src/python:/app \
+		-v `pwd`/src/resources/data:/app/resources/data python-with-poetry
 
-generate_ptbr_html: 
+generate_ptbr_html: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
 	docker run --rm --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor \
 		-o ./output/ptbr/index.html -a toc=left \
 		-a docinfo=shared src/resume-ptbr.adoc
 
-generate_ptbr_pdf:
+generate_ptbr_pdf: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor-pdf -a allow-uri-read \
 		-a pdf-theme=src/resources/themes/default-theme.yml \
 		-a pdf-fontsdir=src/resources/fonts \
 		-o ./output/resume-ptbr-raw.pdf src/resume-ptbr.adoc
 
-generate_ptbr_condensed_pdf:
+generate_ptbr_condensed_pdf: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor-pdf \
 		-a with_activities=false -a allow-uri-read \
@@ -48,20 +48,20 @@ generate_ptbr_condensed_pdf:
 		-a pdf-fontsdir=src/resources/fonts \
 		-o ./output/resume-condensed-ptbr-raw.pdf src/resume-ptbr.adoc
 
-generate_en_html: 
+generate_en_html: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc 
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor \
 		-o ./output/en/index.html -a toc=left \
 		-a docinfo=shared src/resume-en.adoc
 
-generate_en_pdf:
+generate_en_pdf: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor-pdf \
 		-a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml \
 		-a pdf-fontsdir=src/resources/fonts \
 		-o ./output/resume-en-raw.pdf src/resume-en.adoc
 	
-generate_en_consensed_pdf:
+generate_en_consensed_pdf: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor-pdf \
 		-a with_activities=false -a allow-uri-read \
@@ -72,19 +72,25 @@ generate_en_consensed_pdf:
 optimize_en_pdfs: output/resume-condensed-en-raw.pdf output/resume-en-raw.pdf
 	docker run --rm  --platform linux/amd64 -v `pwd`:/app -w /app minidocks/ghostscript \
 		-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen \
-		-dPrinted=false -dNOPAUSE -dQUIET -dBATCH \
+		-dPrinted=false -dNOPAUSE -dBATCH \
 		-sOutputFile=output/en/resume.pdf output/resume-en-raw.pdf && \
 	docker run --rm  --platform linux/amd64 -v `pwd`:/app -w /app minidocks/ghostscript \
 		-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen \
-		-dPrinted=false -dNOPAUSE -dQUIET -dBATCH \
+		-dPrinted=false -dNOPAUSE -dBATCH \
 		-sOutputFile=output/en/resume-condensed.pdf output/resume-condensed-en-raw.pdf
 
-optimize_ptbr_pdfs: output/resume-condensed-ptbr-raw.pdf output/resume-ptbr.pdf
+optimize_ptbr_pdfs: output/resume-condensed-ptbr-raw.pdf output/resume-ptbr-raw.pdf
 	docker run --rm  --platform linux/amd64 -v `pwd`:/app -w /app minidocks/ghostscript \
 		-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen \
-		-dPrinted=false -dNOPAUSE -dQUIET -dBATCH \
+		-dPrinted=false -dNOPAUSE -dBATCH \
 		-sOutputFile=output/ptbr/resume.pdf output/resume-ptbr-raw.pdf && \
 	docker run --rm  --platform linux/amd64 -v `pwd`:/app -w /app minidocks/ghostscript \
 		-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen \
-		-dPrinted=false -dNOPAUSE -dQUIET -dBATCH \
+		-dPrinted=false -dNOPAUSE -dBATCH \
 		-sOutputFile=output/ptbr/resume-condensed.pdf output/resume-condensed-ptbr-raw.pdf
+
+post_clean:
+	rm output/*-raw.pdf
+
+create_symlinks:
+	ln -s `pwd`/output/ptbr/* `pwd`/output/
