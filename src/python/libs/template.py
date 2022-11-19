@@ -6,7 +6,7 @@ class Template:
     self.data = data
 
   def render(self):
-    jinja2_environment = Environment(loader=FileSystemLoader('src/python/template'))
+    jinja2_environment = Environment(loader=FileSystemLoader('template'))
     template = jinja2_environment.get_template(self.template_file)
     return template.render(data=self.data)
 
