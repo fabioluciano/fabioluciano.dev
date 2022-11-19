@@ -7,7 +7,7 @@ on:
       - completed
 
 jobs:
-  get-github-information:
+  build-poetry-container:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -24,24 +24,40 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: ghcr.io/python-with-poetry
+          tags: latest
+          images: ghcr.io/${{ github.repository_owner }}/python-with-poetry
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: .
           file: src/python/Dockerfile
+          # platforms: linux/amd64,linux/arm
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-      # - name: Send generated files to cache
-      #   uses: actions/upload-artifact@master
-      #   with:
-      #     name: src
-      #     path: src
+  generate-adoc-with-github-files:
+    runs-on: ubuntu-latest
+    needs: build-poetry-container
+    container:
+      image: ghcr.io/${{ github.repository_owner }}/python-with-poetry
+      credentials:
+         username: ${{ github.actor }}
+         password: ${{ secrets.github_token }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      volumes:
+        - ${{ GITHUB_WORKSPACE}}/src/python:/app
+        - ${{ GITHUB_WORKSPACE }}/src/resources/data:/app/resources/data
+    steps:
+      - name: Send generated files to cache
+        uses: actions/upload-artifact@master
+        with:
+          name: src
+          path: src
           
   create-html-files:
     runs-on: ubuntu-latest
-    needs: get-github-information
+    needs: generate-adoc-with-github-files
     container:
       image: asciidoctor/docker-asciidoctor
     steps:
