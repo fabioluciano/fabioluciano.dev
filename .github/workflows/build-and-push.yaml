@@ -55,6 +55,8 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           options: -v ${{ github.workspace }}/src/python:/app -v ${{ github.workspace }}/src/resources/data:/app/resources/data
+          run: |
+            ls -laR && pwd
           
   create-html-files:
     runs-on: ubuntu-latest
