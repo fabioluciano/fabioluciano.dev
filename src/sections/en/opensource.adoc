@@ -7,3 +7,41 @@ endif::[]
 ifdef::backend-pdf[]
 == Open Source
 endif::[]
+
+
+=== PHP Documentation
+Participo do {link-phppeople}[time oficial de tradutores] da documentação do PHP. Para garantir que todos tivessem acesso a criar merge requests no repositório oficial, criamos um {link-phpdocbridge}[repositório] no Github que faz a ponte entre os repositórios. Para ver a lista de minhas contribuições, acesse a página de {link-phpdoc-tranlation-page}[status da documentação].
+
+=== Imagens Docker
+All available resources are avaliable in {link-docker-hub-integr8}[DockerHub]. Only those with most relevance are listed here.
+
+[width="100%", options="header",frame="all"] 
+|===
+| Name | Description | Documentation
+include::../../resources/data/docker.adoc[]
+|===
+
+=== Terraform Scripts
+All available resources are avaliable in {link-terraform-integr8}[registrador oficial]. Only those with most relevance are listed here.
+
+[width="100%", options="header",frame="all"] 
+|===
+| Name | Description | Documentation
+include::../../resources/data/terraform.adoc[]
+|===
+
+=== Ansible Galaxy Roles
+All available resources are avaliable in {link-ansible-galaxy-fabioluciano}[Ansible Galaxy]. Only those with most relevance are listed here.
+
+[width="100%", options="header",frame="all"] 
+|===
+| Name | Description | Documentation
+include::../../resources/data/ansible.adoc[]
+|===
+
+=== Packer
+[width="100%", options="header",frame="all"] 
+|===
+| Name | Description | Documentation
+include::../../resources/data/packer.adoc[]
+|===
