@@ -54,7 +54,7 @@ jobs:
         - ${{ github.workspace }}/src/resources/data:/app/resources/data
     steps:
       - name: teste
-        run: pwd
+        run: ls -laR
       - name: Send generated files to cache
         uses: actions/upload-artifact@master
         with:
