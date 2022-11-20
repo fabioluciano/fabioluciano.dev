@@ -51,9 +51,9 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: ghcr.io/${{ github.repository_owner }}/python-with-poetry
-          # credentials:
-          #   username: ${{ github.actor }}
-          #   password: ${{ secrets.github_token }}
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           options: -v ${{ github.workspace }}/src/python:/app -v ${{ github.workspace }}/src/resources/data:/app/resources/data
           
   create-html-files:
