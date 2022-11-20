@@ -54,7 +54,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          options: -v ${{ github.workspace }}/src/python:/app -v ${{ github.workspace }}/src/resources/data:/app/resources/data
+          options: -e GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} -v ${{ github.workspace }}/src/python:/app -v ${{ github.workspace }}/src/resources/data:/app/resources/data
           run: poetry install --no-interaction --no-ansi -vvvv && poetry run python main.py
           
   create-html-files:
