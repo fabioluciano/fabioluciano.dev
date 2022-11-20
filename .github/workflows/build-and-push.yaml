@@ -55,24 +55,6 @@ jobs:
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             options: -v ${{ github.workspace }}/src/python:/app -v ${{ github.workspace }}/src/resources/data:/app/resources/data
-    # container:
-    #   image: ghcr.io/${{ github.repository_owner }}/python-with-poetry
-    #   credentials:
-    #      username: ${{ github.actor }}
-    #      password: ${{ secrets.github_token }}
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #   volumes:
-    #     - ${{ github.workspace }}/src/python:/app
-    #     - ${{ github.workspace }}/src/resources/data:/app/resources/data
-    # steps:
-    #   - name: teste
-    #     run: ls -laR
-    #   - name: Send generated files to cache
-    #     uses: actions/upload-artifact@master
-    #     with:
-    #       name: src
-    #       path: src
           
   create-html-files:
     runs-on: ubuntu-latest
