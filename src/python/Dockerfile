@@ -4,5 +4,5 @@ ENV POETRY_VIRTUALENVS_IN_PROJECT=true
 ENV PATH="$POETRY_HOME/bin:$PATH"
 WORKDIR /app
 RUN python -c 'from urllib.request import urlopen; print(urlopen("https://install.python-poetry.org").read().decode())' | python -
-ENTRYPOINT poetry install --no-interaction --no-ansi -vvvv \
+CMD poetry install --no-interaction --no-ansi -vvvv \
   && poetry run python main.py
