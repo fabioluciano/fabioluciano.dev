@@ -53,9 +53,8 @@ jobs:
         - ${{ github.workspace }}/src/python:/app
         - ${{ github.workspace }}/src/resources/data:/app/resources/data
     steps:
-      - uses: actions/checkout@v3
       - name: teste
-        run: poetry install --no-interaction --no-ansi -vvvv && poetry run python main.py
+        run: pwd
       - name: Send generated files to cache
         uses: actions/upload-artifact@master
         with:
