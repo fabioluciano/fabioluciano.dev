@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           file: src/python/Dockerfile
-          # platforms: linux/amd64,linux/arm
+          platforms: linux/amd64,linux/arm
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
@@ -46,8 +46,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       volumes:
-        - ./src/python:/app
-        - ./src/resources/data:/app/resources/data
+        - ${{ github.workspace }}/src/python:/app
+        - ${{ github.workspace }}/src/resources/data:/app/resources/data
     steps:
       - name: Send generated files to cache
         uses: actions/upload-artifact@master
