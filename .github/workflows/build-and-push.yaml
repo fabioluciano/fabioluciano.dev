@@ -56,6 +56,11 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           options: -e GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} -v ${{ github.workspace }}/src/python:/app -v ${{ github.workspace }}/src/resources/data:/app/resources/data
           run: poetry install --no-interaction --no-ansi -vvvv && poetry run python main.py
+      - name: Send generated files to cache
+        uses: actions/upload-artifact@master
+        with:
+          name: src
+          path: src
           
   create-html-files:
     runs-on: ubuntu-latest
