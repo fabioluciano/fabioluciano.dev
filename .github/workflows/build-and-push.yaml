@@ -42,6 +42,8 @@ jobs:
   generate-adoc-with-github-files:
     runs-on: ubuntu-latest
     needs: build-poetry-container
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -52,8 +54,6 @@ jobs:
           # credentials:
           #   username: ${{ github.actor }}
           #   password: ${{ secrets.github_token }}
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           options: -v ${{ github.workspace }}/src/python:/app -v ${{ github.workspace }}/src/resources/data:/app/resources/data
           
   create-html-files:
