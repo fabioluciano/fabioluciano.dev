@@ -1,16 +1,9 @@
 name: build-resume-and-deploy
-
 on:
-  pull_request:
-    branches:
-      - main
-
-# on:
-#   workflow_run:
-#     workflows: ["semantic-release"]
-#     types:
-#       - completed
-
+  workflow_run:
+    workflows: ["semantic-release"]
+    types:
+      - completed
 jobs:
   build-poetry-container:
     runs-on: ubuntu-latest
