@@ -48,6 +48,8 @@ jobs:
         - ${{ github.workspace }}/src/python:/app
         - ${{ github.workspace }}/src/resources/data:/app/resources/data
     steps:
+      - name: teste
+        run: poetry install --no-interaction --no-ansi -vvvv && poetry run python main.py
       - name: Send generated files to cache
         uses: actions/upload-artifact@master
         with:
