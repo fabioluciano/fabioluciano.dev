@@ -1,19 +1,9 @@
 name: semantic-release
-
-
 on:
-  pull_request:
+  push:
     branches:
       - main
-
-
-# on:
-#   push:
-#     branches:
-#       - main
-#   workflow_dispatch:
-
-
+  workflow_dispatch:
 jobs:
   release:
     name: Release

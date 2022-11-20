@@ -1,10 +1,15 @@
 name: build-resume-and-deploy
 
 on:
-  workflow_run:
-    workflows: ["semantic-release"]
-    types:
-      - completed
+  pull_request:
+    branches:
+      - main
+
+# on:
+#   workflow_run:
+#     workflows: ["semantic-release"]
+#     types:
+#       - completed
 
 jobs:
   build-poetry-container:
@@ -48,6 +53,7 @@ jobs:
         - ${{ github.workspace }}/src/python:/app
         - ${{ github.workspace }}/src/resources/data:/app/resources/data
     steps:
+      - uses: actions/checkout@v3
       - name: teste
         run: poetry install --no-interaction --no-ansi -vvvv && poetry run python main.py
       - name: Send generated files to cache
