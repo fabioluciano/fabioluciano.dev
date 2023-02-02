@@ -63,5 +63,5 @@ ifdef::backend-pdf[]
 == Idiomas
 endif::[]
 **Português** Língua nativa +
-**Inglês**: Leitura(fluente), escrita(intermediário) e conversação(intermediário) +
+**Inglês**: Leitura(avançado), escrita(avançado) e conversação(avançado) +
 **Espanhol**: Leitura(basico), escrita(basico) e conversação(basico)
