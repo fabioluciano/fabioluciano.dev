@@ -52,6 +52,7 @@
 :link-ministry-mctic: http://www.mctic.gov.br
 :link-sonda: https://www.sonda.com/br/
 :link-picpay: https://picpay.com/
+:link-actdigital: https://actdigital.com
 
 :link-phpdocbridge: https://github.com/phpdocbrbridge
 :link-phpdoc-tranlation-page: http://doc.php.net/revcheck.php?p=files&user=fabioluciano&lang=pt_BR

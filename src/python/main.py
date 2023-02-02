@@ -1,6 +1,6 @@
-from os.path import dirname, abspath
-from os import environ
 from collections import Counter
+from os import environ
+from os.path import abspath, dirname
 
 from libs.github_client import GithubClient
 from libs.template import Template
@@ -12,6 +12,9 @@ section_dir = dirname(abspath(__file__)) + "/resources/data/"
 repositories = github_client.get_repositories_by_users(
     users=["fabioluciano", "integr8", "utils-docker"],
 )
+
+print(repositories)
+
 repositories_with_description = [
     repository for repository in repositories if (repository["description"] is not None)
 ]

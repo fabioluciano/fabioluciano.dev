@@ -12,6 +12,30 @@ endif::[]
 === Tech Lead
 --
 icon:calendar[title="Período"] 07/2020 até o momento +
+icon:building[title="Empregador"] {link-actdigital}[ActDigital, role="external", window="_blank"] +
+icon:chevron-circle-right[title="Departamento"] Liderança
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Atividades executadas
+[%collapsible]
+====
+endif::[]
+- Liderança técnica, auxiliando os colegas na execução das atividades, bem como projetar e atender os planos de desenvolvimento individuais;
+- Condução de entrevistas para composição dos times internos dos clientes;
+- Projeção de solução _multicloud_ para projetos internos dos clientes;
+- Construção/Avaliação de plano de migração do _on premises_ para provedores de serviços cloud;
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Palavras-chave:: Leadership, Cloud Computing, Azure, AKS, Kubernetes, OpenShift.
+--
+
+'''
+=== Tech Lead
+--
+icon:calendar[title="Período"] 07/2020 até 01/2022 +
 icon:building[title="Empregador"] {link-picpay}[PicPay, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento"] Developer Experience
 
@@ -34,7 +58,7 @@ ifdef::backend-html5[]
 ====
 endif::[]
 endif::[]
-Palavras-chave:: Cloud Computing, AWS, Pipelines, Integração Contínua, Entrega Contínua, Qualidade Contínua, Rundeck, Kubernetes, Helm, Harness, Tekton.
+Palavras-chave:: Leadership, Cloud Computing, AWS, Pipelines, Integração Contínua, Entrega Contínua, Qualidade Contínua, Rundeck, Kubernetes, Helm, Harness, Tekton.
 --
 
 '''

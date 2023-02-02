@@ -11,10 +11,6 @@ ifdef::backend-html5[]
 [NOTE]
 ====
 This page is written in `AsciiDoc` format. Its source code is available at https://github.com/fabioluciano/fabioluciano.github.io[ icon:github[] Resume repository, role="external", window="_blank"].
-====
-
-[TIP]
-====
 You can download the link:{link-resume-en-pdf}[ icon:file-pdf-o[] PDF, role="external", window="_blank"] version too. +
 There is a brazilian portuguese version avaliable. You can access as a link:{link-resume-ptbr}[ icon:link[] Website], like these, or the link:{link-resume-ptbr-pdf}[ icon:file-pdf-o[] PDF, role="external", window="_blank"] version.
 ====
