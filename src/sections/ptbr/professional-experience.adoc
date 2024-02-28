@@ -9,9 +9,40 @@ ifdef::backend-pdf[]
 == Experiências profissionais
 endif::[]
 
+=== Analista DevOps
+--
+icon:calendar[title="Período"] 07/2022 até 01/2023+
+icon:building[title="Empregador"] {link-matera}[MATERA, role="external", window="_blank"] +
+icon:chevron-circle-right[title="Departamento"] Digital Twin
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Atividades executadas
+[%collapsible]
+====
+endif::[]
+- Projetar, desenvolver e implantar soluções baseadas em nuvem utilizando  os principais provedores de serviços em cloud do mercado;
+- Projetar, desenvolver e implantar soluções baseadas em `Kubernetes` ;
+- Criação de infraestrutura como código utilizando o Terraform para implantação de soluções utilizadas;
+- Implantação e configuração de ferramentas de integração e entrega contínua em ambiente empresarial (`Jenkins`, `Tekton`, `SonarQube, Sonatype Nexus`, `Gitlab`, etc.);
+- Implementação e implantação da automatização de configurações e propriedades em ferramentas utilizando `Apache Groovy`, `ShellScript`, `Python`` ou qualquer outra linguagem;
+- Definição de processos de integração/entrega contínua de aplicações, bem como atendimento de requisitos mínimos de segurança e qualidade em aplicações;
+- Orquestração do processo de integração/entrega contínua utilizando ferramentas (`Jenkins`, `Tekton`, `SonarQube, Sonatype Nexus`, `Gitlab`, etc.);
+- Execuções de provas de conceitos(POCs/MVPs), de esteiras de verificação e validação contínua para diversos tiers/linguagens;
+- Projetar, desenvolver e implantar soluções de monitoramento e observabilidade, utilizando ferramentas como `Prometheus`, `Grafana`, `AWS CloudWatch`,  entre outras. Além disso, criar dashboards e alertas para monitorar o desempenho e a saúde dos aplicativos implantados.
+
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Palavras-chave:: Cloud Computing, Azure, AKS, Kubernetes, Terraform, Tekton.
+--
+
+'''
+
 === Tech Lead
 --
-icon:calendar[title="Período"] 07/2022 até o momento +
+icon:calendar[title="Período"] 07/2022 até 01/2023+
 icon:building[title="Empregador"] {link-actdigital}[ActDigital, role="external", window="_blank"] +
 icon:chevron-circle-right[title="Departamento"] Liderança
 
