@@ -160,7 +160,7 @@ jobs:
       - name: Remove transient PDF version
         run: rm output/resume-raw.pdf output/en/resume-raw.pdf ./output/resume-condensed-raw.pdf ./output/en/resume-condensed-raw.pdf
       - name: Create CNAME file
-        run: echo ${{ secrets.GITHUB_PAGES_DOMAIN }} > ./output/CNAME
+        run: echo ${{ secrets.GH_PAGES_DOMAIN }} > ./output/CNAME
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
