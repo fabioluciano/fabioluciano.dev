@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-    steps: 
+    steps:
       - uses: actions/checkout@v3
       - name: Log in to the Container registry
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
@@ -54,7 +54,7 @@ jobs:
         with:
           name: src
           path: src
-          
+
   create-html-files:
     runs-on: ubuntu-latest
     needs: generate-adoc-with-github-files
@@ -88,21 +88,21 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: src
-          path: src 
+          path: src
       - name: Create ptbr(default) resume version
-        run: | 
+        run: |
           asciidoctor-pdf -a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml -a pdf-fontsdir=src/resources/fonts -o ./output/resume-raw.pdf src/resume-ptbr.adoc
       - name: Create en resume version
-        run: | 
+        run: |
           asciidoctor-pdf -a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml -a pdf-fontsdir=src/resources/fonts -o ./output/en/resume-raw.pdf src/resume-en.adoc
       - name: Create ptbr(default) condensed resume version
-        run: | 
+        run: |
           asciidoctor-pdf -a with_activities=false -a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml -a pdf-fontsdir=src/resources/fonts -o ./output/resume-condensed-raw.pdf src/resume-ptbr.adoc
       - name: Create en condensed resume version
-        run: | 
+        run: |
           asciidoctor-pdf -a with_activities=false -a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml -a pdf-fontsdir=src/resources/fonts -o ./output/en/resume-condensed-raw.pdf src/resume-en.adoc
       - name: Send generated output files to cache
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v3
         with:
           name: output
           path: output
@@ -117,29 +117,29 @@ jobs:
           name: output
           path: output
       - name: Compress ptbr(dafault) version PDF
-        uses: jy95/ghostscript-action@v1  
-        with:  
-          file: 'output/resume-raw.pdf'
-          output: 'output/resume.pdf'
-          arbitrary-parameters: '-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH'
+        uses: jy95/ghostscript-action@v1
+        with:
+          file: "output/resume-raw.pdf"
+          output: "output/resume.pdf"
+          arbitrary-parameters: "-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH"
       - name: Compress ptbr(dafault) consensed version PDF
-        uses: jy95/ghostscript-action@v1  
-        with:  
-          file: 'output/resume-condensed-raw.pdf'
-          output: 'output/resume-condensed.pdf'
-          arbitrary-parameters: '-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH'
+        uses: jy95/ghostscript-action@v1
+        with:
+          file: "output/resume-condensed-raw.pdf"
+          output: "output/resume-condensed.pdf"
+          arbitrary-parameters: "-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH"
       - name: Compress english version PDF
-        uses: jy95/ghostscript-action@v1  
-        with:  
-          file: 'output/en/resume-raw.pdf'
-          output: 'output/en/resume.pdf'
-          arbitrary-parameters: '-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH'
+        uses: jy95/ghostscript-action@v1
+        with:
+          file: "output/en/resume-raw.pdf"
+          output: "output/en/resume.pdf"
+          arbitrary-parameters: "-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH"
       - name: Compress en consensed version PDF
-        uses: jy95/ghostscript-action@v1  
-        with:  
-          file: 'output/en/resume-condensed-raw.pdf'
-          output: 'output/en/resume-condensed.pdf'
-          arbitrary-parameters: '-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH'
+        uses: jy95/ghostscript-action@v1
+        with:
+          file: "output/en/resume-condensed-raw.pdf"
+          output: "output/en/resume-condensed.pdf"
+          arbitrary-parameters: "-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH"
       - name: Send generated output files to cache
         uses: actions/upload-artifact@master
         with:
@@ -150,7 +150,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - create-html-files
-      - optimize-pdf 
+      - optimize-pdf
     steps:
       - name: Recover generated files from cache
         uses: actions/download-artifact@master
