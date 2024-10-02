@@ -8,7 +8,7 @@ ifdef::backend-pdf[]
 endif::[]
 
 --
-** Certified Kubernetes Application Developer** +
+**Certified Kubernetes Application Developer** +
 icon:building[title="Emissor"] Cloud Native Computing Foundation icon:calendar[title="Período"] 09/2024 - 09/2026 icon:key[title="Licença"] {link-certification-cncf}[LF-5offxxtx08, role="external", window="_blank"]
 --
 
