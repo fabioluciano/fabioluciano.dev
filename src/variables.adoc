@@ -43,6 +43,8 @@
 :link-certification-zend-site: http://www.zend.com/en/yellow-pages/ZEND026303
 :link-certification-lpic-ot-site: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000397664/sfuy2nckbr
 :link-certification-aws: https://aw.certmetrics.com/amazon/public/verification.aspx
+:link-certification-cncf: https://training.linuxfoundation.org/certification/verify/
+
 
 :link-fabrica-ideias: http://www.fabricadeideias.com.br/
 :link-gestao-ti: http://www.gestaoti.com.br/
