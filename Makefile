@@ -16,58 +16,52 @@ help: ## show this help
 
 .PHONY: all
 
-all: execute_scripts generate_htmls generate_pdfs optimize_pdfs ## Execute all steps
+all: generate_htmls generate_pdfs optimize_pdfs ## Execute all steps
 generate_htmls: generate_ptbr_html generate_en_html ## Generate HTML files for hosting purposes
 generate_pdfs: generate_ptbr_pdf generate_en_pdf generate_ptbr_condensed_pdf generate_en_consensed_pdf ## Generate PDF files for hosting purposes
 optimize_pdfs: optimize_en_pdfs optimize_ptbr_pdfs
 
-execute_scripts: ## Execute python code for generate informations
-	@docker build -t python-with-poetry -f src/python/Dockerfile . && \
-	docker run --rm -e "GITHUB_TOKEN=${GITHUB_TOKEN}" \
-		-v `pwd`/src/python:/app \
-		-v `pwd`/src/resources/data:/app/resources/data python-with-poetry
-
-generate_ptbr_html: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
+generate_ptbr_html:
 	docker run --rm --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor \
-		-o ./output/ptbr/index.html -a toc=left \
-		-a docinfo=shared src/resume-ptbr.adoc
+			-o ./output/ptbr/index.html -a toc=left \
+			-a docinfo=shared src/resume-ptbr.adoc
 
-generate_ptbr_pdf: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
+generate_ptbr_pdf:
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor-pdf -a allow-uri-read \
-		-a pdf-theme=src/resources/themes/default-theme.yml \
-		-a pdf-fontsdir=src/resources/fonts \
-		-o ./output/resume-ptbr-raw.pdf src/resume-ptbr.adoc
+			-a pdf-theme=src/resources/themes/default-theme.yml \
+			-a pdf-fontsdir=src/resources/fonts \
+			-o ./output/resume-ptbr-raw.pdf src/resume-ptbr.adoc
 
-generate_ptbr_condensed_pdf: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
+generate_ptbr_condensed_pdf:
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor-pdf \
-		-a with_activities=false -a allow-uri-read \
-		-a pdf-theme=src/resources/themes/default-theme.yml \
-		-a pdf-fontsdir=src/resources/fonts \
-		-o ./output/resume-condensed-ptbr-raw.pdf src/resume-ptbr.adoc
+			-a with_activities=false -a allow-uri-read \
+			-a pdf-theme=src/resources/themes/default-theme.yml \
+			-a pdf-fontsdir=src/resources/fonts \
+			-o ./output/resume-condensed-ptbr-raw.pdf src/resume-ptbr.adoc
 
-generate_en_html: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc 
+generate_en_html:
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor \
-		-o ./output/en/index.html -a toc=left \
-		-a docinfo=shared src/resume-en.adoc
+			-o ./output/en/index.html -a toc=left \
+			-a docinfo=shared src/resume-en.adoc
 
-generate_en_pdf: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
+generate_en_pdf:
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor-pdf \
-		-a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml \
-		-a pdf-fontsdir=src/resources/fonts \
-		-o ./output/resume-en-raw.pdf src/resume-en.adoc
+			-a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml \
+			-a pdf-fontsdir=src/resources/fonts \
+			-o ./output/resume-en-raw.pdf src/resume-en.adoc
 	
-generate_en_consensed_pdf: src/resources/data/ansible.adoc src/resources/data/docker.adoc src/resources/data/packer.adoc src/resources/data/terraform.adoc
+generate_en_consensed_pdf:
 	docker run --rm  --platform linux/amd64 -v `pwd`:/documents/ \
 		asciidoctor/docker-asciidoctor asciidoctor-pdf \
-		-a with_activities=false -a allow-uri-read \
-		-a pdf-theme=src/resources/themes/default-theme.yml \
-		-a pdf-fontsdir=src/resources/fonts \
-		-o ./output/resume-condensed-en-raw.pdf src/resume-en.adoc
+			-a with_activities=false -a allow-uri-read \
+			-a pdf-theme=src/resources/themes/default-theme.yml \
+			-a pdf-fontsdir=src/resources/fonts \
+			-o ./output/resume-condensed-en-raw.pdf src/resume-en.adoc
 
 optimize_en_pdfs: output/resume-condensed-en-raw.pdf output/resume-en-raw.pdf
 	docker run --rm  --platform linux/amd64 -v `pwd`:/app -w /app minidocks/ghostscript \

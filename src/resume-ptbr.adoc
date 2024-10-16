@@ -27,6 +27,4 @@ include::{includedir}/ptbr/certifications.adoc[]
 
 include::{includedir}/ptbr/technical-skills.adoc[]
 
-include::{includedir}/ptbr/opensource.adoc[]
-
 include::{includedir}/ptbr/professional-experience.adoc[]

@@ -11,8 +11,8 @@ endif::[]
 
 === Analista DevOps
 --
-icon:calendar[title="Período"] 03/2023 até o momento +
-icon:building[title="Empregador"] {link-matera}[MATERA, role="external", window="_blank"] +
+icon:calendar[title="Período"] 03/2023 até o momento |
+icon:building[title="Empregador"] {link-matera}[MATERA, role="external", window="_blank"] |
 icon:chevron-circle-right[title="Departamento"] Digital Twin
 
 ifeval::[{with_activities} == true]
@@ -42,8 +42,8 @@ Palavras-chave:: Cloud Computing, Azure, AKS, Kubernetes, Terraform, Tekton.
 
 === Tech Lead
 --
-icon:calendar[title="Período"] 07/2022 até 01/2023 +
-icon:building[title="Empregador"] {link-actdigital}[ActDigital, role="external", window="_blank"] +
+icon:calendar[title="Período"] 07/2022 até 01/2023 |
+icon:building[title="Empregador"] {link-actdigital}[ActDigital, role="external", window="_blank"] |
 icon:chevron-circle-right[title="Departamento"] Liderança
 
 ifeval::[{with_activities} == true]
@@ -66,8 +66,8 @@ Palavras-chave:: Leadership, Cloud Computing, Azure, AKS, Kubernetes, OpenShift.
 '''
 === Tech Lead
 --
-icon:calendar[title="Período"] 07/2020 até 01/2022 +
-icon:building[title="Empregador"] {link-picpay}[PicPay, role="external", window="_blank"] +
+icon:calendar[title="Período"] 07/2020 até 01/2022 |
+icon:building[title="Empregador"] {link-picpay}[PicPay, role="external", window="_blank"] |
 icon:chevron-circle-right[title="Departamento"] Developer Experience
 
 ifeval::[{with_activities} == true]
@@ -96,9 +96,9 @@ Palavras-chave:: Leadership, Cloud Computing, AWS, Pipelines, Integração Cont�
 
 === Arquiteto de Soluções
 --
-icon:calendar[title="Período"] 01/2018 até o 07/2020 +
-icon:building[title="Empregador"] {link-sonda}[SONDA IT, role="external", window="_blank"] +
-icon:chevron-circle-right[title="Departamento|"] Fábrica de Software
+icon:calendar[title="Período"] 01/2018 até o 07/2020 |
+icon:building[title="Empregador"] {link-sonda}[SONDA IT, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Departamento"] Fábrica de Software
 
 ifeval::[{with_activities} == true]
 ifdef::backend-html5[]
@@ -128,8 +128,8 @@ Palavras-chave:: Cloud Computing, AWS, Azure, Terraform, Ansible, Docker, Java, 
 
 === Arquiteto de Software
 --
-icon:calendar[title="Período"] 07/2016 até 12/2017 +
-icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
+icon:calendar[title="Período"] 07/2016 até 12/2017 |
+icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] |
 icon:chevron-circle-right[title="Departamento|"] {link-ministry-mctic}[Ministério da Ciência e Tecnologia]
 
 ifeval::[{with_activities} == true]
@@ -158,8 +158,8 @@ Palavras-chave:: Java, PHP, CAS, Microserviços, DevOPS, Jenkins, Angular, Jenki
 
 === Arquiteto de Software
 --
-icon:calendar[title="Período"] 04/2016 a 07/2016 +
-icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
+icon:calendar[title="Período"] 04/2016 a 07/2016 |
+icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] |
 icon:chevron-circle-right[title="Departamento|"] {link-ministry-mdic}[Ministério do Desenvolvimento Indústria e Comércio]
 
 ifeval::[{with_activities} == true]
@@ -192,8 +192,8 @@ Palavras-chave:: SOA, PHP, Phalcon, Symfony, Laravel, DAO, Arquitetura, AngularJ
 
 === Arquiteto de Software
 --
-icon:calendar[title="Período"] 03/2015 a 12/2015 +
-icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
+icon:calendar[title="Período"] 03/2015 a 12/2015 |
+icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] |
 icon:chevron-circle-right[title="Departamento|"] {link-ministry-integration}[Ministério da Integração Nacional]
 
 ifeval::[{with_activities} == true]
@@ -220,8 +220,8 @@ Palavras-chave:: SOA, PHP, Java, Laravel, Spring, AngularJS, Jenkins.
 
 === Desenvolvedor PHP
 --
-icon:calendar[title="Período"] 02/2014 a 03/2015 +
-icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] +
+icon:calendar[title="Período"] 02/2014 a 03/2015 |
+icon:building[title="Empregador"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] |
 icon:chevron-circle-right[title="Departamento|"] {link-ministry-integration}[Ministério da Integração Nacional]
 
 ifeval::[{with_activities} == true]
