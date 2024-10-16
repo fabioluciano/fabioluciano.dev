@@ -10,11 +10,6 @@ jobs:
     container:
       image: asciidoctor/docker-asciidoctor
     steps:
-      - name: Recover generated files from cache
-        uses: actions/download-artifact@v3
-        with:
-          name: src
-          path: src
       - name: Create ptbr(default) resume version
         run: |
           asciidoctor -o ./output/index.html -a toc=left -a docinfo=shared src/resume-ptbr.adoc
@@ -32,11 +27,6 @@ jobs:
     container:
       image: asciidoctor/docker-asciidoctor
     steps:
-      - name: Recover generated files tofrom cache
-        uses: actions/download-artifact@v3
-        with:
-          name: src
-          path: src
       - name: Create ptbr(default) resume version
         run: |
           asciidoctor-pdf -a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml -a pdf-fontsdir=src/resources/fonts -o ./output/resume-raw.pdf src/resume-ptbr.adoc
