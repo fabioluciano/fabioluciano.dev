@@ -1,4 +1,4 @@
-
+  
 ifdef::backend-html5[]
 == icon:certificate[] Certificações
 endif::[]
@@ -15,6 +15,11 @@ icon:building[title="Emissor"] Cloud Native Computing Foundation icon:calendar[t
 --
 **Certified Kubernetes Application Developer** +
 icon:building[title="Emissor"] Cloud Native Computing Foundation icon:calendar[title="Período"] 09/2024 - 09/2026 icon:key[title="Licença"] {link-certification-cncf}[LF-5offxxtx08, role="external", window="_blank"]
+--
+
+--
+**Kubernetes and Cloud Native Associate** +
+icon:building[title="Emissor"] Cloud Native Computing Foundation icon:calendar[title="Período"] 10/2024 - 10/2026 icon:key[title="Licença"] {link-certification-cncf}[LF-ave7twx7wn, role="external", window="_blank"]
 --
 
 --
