@@ -1,9 +1,223 @@
 [[professional-experience]]
 
 ifdef::backend-html5[]
-== icon:suitcase[] Work Experiences
+== icon:suitcase[] Professional Experience
 endif::[]
 
 ifdef::backend-pdf[]
-== Work Experiences
+== Professional Experience
 endif::[]
+
+=== DevOps Analyst
+--
+icon:calendar[title="Period"] 03/2023 to Present |
+icon:building[title="Employer"] {link-matera}[MATERA, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Department"] Digital Twin
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Executed Activities
+[%collapsible]
+====
+endif::[]
+- Design, develop, and deploy cloud-based solutions with major cloud service providers;
+- Design, develop, and deploy solutions based on `Kubernetes`;
+- Infrastructure as code creation using Terraform for solution deployment;
+- Setup and configuration of continuous integration and delivery tools (e.g., `Jenkins`, `Tekton`, `SonarQube`, `Sonatype Nexus`, `GitLab`);
+- Automation of configuration and settings in tools using `Apache Groovy`, `ShellScript`, `Python`, and other languages;
+- Definition of CI/CD processes to ensure security and quality in applications;
+- CI/CD orchestration using tools like (`Jenkins`, `Tekton`, `SonarQube`, `Sonatype Nexus`, `GitLab`);
+- Execution of proofs of concept (POCs/MVPs) for continuous testing pipelines for various tiers/languages;
+- Design, develop, and deploy monitoring and observability solutions with tools like `Prometheus`, `Grafana`, `AWS CloudWatch`, including dashboards and alerts to track application performance and health.
+
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Keywords:: Cloud Computing, Azure, AKS, Kubernetes, Terraform, Tekton.
+--
+
+=== Tech Lead
+--
+icon:calendar[title="Period"] 07/2022 to 01/2023 |
+icon:building[title="Employer"] {link-actdigital}[ActDigital, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Department"] Leadership
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Executed Activities
+[%collapsible]
+====
+endif::[]
+- Technical leadership, assisting colleagues in tasks, and creating individual development plans;
+- Conducting interviews for internal client teams;
+- Multicloud solution design for internal client projects;
+- Planning and assessing on-premises to cloud migration strategies.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Keywords:: Leadership, Cloud Computing, Azure, AKS, Kubernetes, OpenShift.
+--
+
+=== Tech Lead
+--
+icon:calendar[title="Period"] 07/2020 to 01/2022 |
+icon:building[title="Employer"] {link-picpay}[PicPay, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Department"] Developer Experience
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Executed Activities
+[%collapsible]
+====
+endif::[]
+- Technical leadership, assisting team members and setting individual development plans;
+- Documenting and sharing team tools and procedures;
+- Implementing new continuous deployment strategies and tools with `Helm` and `Harness`;
+- Developing new CI strategies using `Tekton` Pipelines;
+- Executing POCs for continuous testing pipelines across different tiers/languages;
+- Creating playbooks with `Ansible` for CI/CD strategy migration support;
+- Presenting new features in maintained tools;
+- Promoting best practices in code and API governance;
+- Developing CLI tools to reduce toil.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Keywords:: Leadership, Cloud Computing, AWS, Pipelines, CI/CD, Quality, Rundeck, Kubernetes, Helm, Harness, Tekton.
+--
+
+=== Solutions Architect
+--
+icon:calendar[title="Period"] 01/2018 to 07/2020 |
+icon:building[title="Employer"] {link-sonda}[SONDA IT, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Department"] Software Factory
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Executed Activities
+[%collapsible]
+====
+endif::[]
+- Infrastructure as code setup with Terraform and CloudFormation for Software Factory solutions;
+- Setup of CI/CD tools (Jenkins, SonarQube, Sonatype Nexus, GitLab);
+- Load balancing and scalability setup for CI/CD tools and applications with HAProxy;
+- Automating configuration and settings in tools using Apache Groovy;
+- Private cloud setup for on-demand resource orchestration;
+- Private cloud and app deployment using IaC with Ansible, Fabric, and Docker Compose;
+- CI/CD environment configuration across geographically distributed environments;
+- CI/CD process definition for application security and quality;
+- CI/CD orchestration using (Jenkins, SonarQube, Sonatype Nexus, GitLab);
+- Automated testing (JUnit, PHPUnit, Karma, Jasmine, Cucumber, Codeception, Behat, Cucumberjs) setup for applications;
+- Cloud-based solutions design using AWS and Microsoft Azure.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Keywords:: Cloud Computing, AWS, Azure, Terraform, Ansible, Docker, Java, PHP, CAS, Microservices, DevOPS, Jenkins, Angular, GitLab, Nexus, SonarQube, CI/CD, LogStash.
+--
+
+=== Software Architect
+--
+icon:calendar[title="Period"] 07/2016 to 12/2017 |
+icon:building[title="Employer"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Department"] {link-ministry-mctic}[Ministry of Science and Technology]
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Executed Activities
+[%collapsible]
+====
+endif::[]
+- Development and maintenance of microservices architecture;
+- Deployment of tools to support DevOps philosophy;
+- Microservices log analysis and automation triggers with LogStash;
+- Microservices monitoring using Prometheus;
+- CI/CD pipeline creation for Java(JEE), Angular.js, and PHP projects;
+- Docker container setup for microservices orchestration;
+- Load balancing and high availability setup with HaProxy;
+- Automated deployment of microservices with Ansible.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Keywords:: Java, PHP, CAS, Microservices, DevOPS, Jenkins, Angular, GitLab, Nexus, SonarQube, CI/CD, LogStash.
+--
+
+=== Software Architect
+--
+icon:calendar[title="Period"] 04/2016 to 07/2016 |
+icon:building[title="Employer"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Department"] {link-ministry-mdic}[Ministry of Development, Industry, and Trade]
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Executed Activities
+[%collapsible]
+====
+endif::[]
+- Development and maintenance of service-oriented architecture (SOA);
+- Architectural implementation using Phalcon PHP, Symfony, and Laravel;
+- DAO component implementation for cross-architecture reuse;
+- AngularJS architecture development;
+- Systems architectural documentation;
+- Application deployment documentation;
+- Job creation and maintenance in Jenkins;
+- Security guidelines for software projects;
+- Static analysis policies for quality assessment;
+- Software quality monitoring with SonarQube;
+- Version management with Sonatype Nexus;
+- Application containerization POC creation.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Keywords:: SOA, PHP, Phalcon, Symfony, Laravel, DAO, Architecture, AngularJS, Jenkins, SonarQube, Nexus, Docker, Container.
+--
+
+=== Software Architect
+--
+icon:calendar[title="Period"] 03/2015 to 12/2015 |
+icon:building[title="Employer"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Department"] {link-ministry-integration}[Ministry of National Integration]
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Executed Activities
+[%collapsible]
+====
+endif::[]
+- SOA development and maintenance;
+- Dual backend architectures in Laravel (PHP) and Spring (Java);
+- Frontend architecture with AngularJS;
+- AngularJS component scaffolding tool creation;
+- Systems architectural documentation;
+- Jenkins job creation and maintenance.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Keywords:: SOA, PHP, Java, Laravel, Spring, AngularJS, Jenkins.
+--
+
+=== PHP Developer
+--
+icon:calendar[title="Period"] 02/2014 to 03/2015 |
+icon:building[title="Employer"] {link-ctis}[CTIS Tecnologia, role="external", window="_blank"] |
+icon:chevron-circle-right[title="Department"] {link-ministry-integration}[Ministry of National Integration]
+
+ifeval::[{with_activities} == true]
+ifdef::backend-html5[]
+.Executed Activities
+[%collapsible]
+====
+endif::[]
+- Backend development and maintenance with PHP frameworks Zend, Symfony, and Laravel;
+- Frontend development and maintenance using HTML, JavaScript (JQuery), and CSS.
+ifdef::backend-html5[]
+====
+endif::[]
+endif::[]
+Keywords:: PHP, Zend Framework, Symfony, Laravel, HTML, JavaScript, JQuery, CSS.
+--
