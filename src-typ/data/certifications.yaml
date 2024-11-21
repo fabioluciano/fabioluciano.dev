@@ -1,0 +1,69 @@
+- name: Kubestronaut
+  institute: Cloud Native Computing Foundation
+  period:
+    start: 10/2024
+    end: 10/2026
+  url: https://www.credly.com/badges/c2c49eb5-1ad9-4221-9244-b74b41902ac0/public_url
+  code: LF-3p8x4h8k9y
+- name: Certified Kubernetes Security Specialist
+  institute: Cloud Native Computing Foundation
+  period:
+    start: 10/2024
+    end: 10/2026
+  url: https://training.linuxfoundation.org/certification/verify/
+  code: LF-7jsua78wls
+- name: Certified Kubernetes Administrator
+  institute: Cloud Native Computing Foundation
+  period:
+    start: 10/2024
+    end: 10/2026
+  validation_url: https://training.linuxfoundation.org/certification/verify/
+  code: LF-3p8x4h8k9y
+
+- name: Certified Kubernetes Application Developer
+  institute: Cloud Native Computing Foundation
+  period:
+    start: 09/2024
+    end: 09/2026
+  validation_url: https://training.linuxfoundation.org/certification/verify/
+  code: LF-5offxxtx08
+
+- name: Kubernetes and Cloud Native Associate
+  institute: Cloud Native Computing Foundation
+  period:
+    start: 10/2024
+    end: 10/2026
+  validation_url: https://training.linuxfoundation.org/certification/verify/
+  code: LF-ave7twx7wn
+
+- name: AWS Certified Solutions Architect - Associate
+  institute: Amazon Web Services
+  period:
+    start: 10/2018
+    end: 10/2023
+  validation_url: https://aw.certmetrics.com/amazon/public/verification.aspx
+  code: EZE0CYJ2KB4QQ094
+
+- name: AWS Certified Cloud Practitioner
+  institute: Amazon Web Services
+  period:
+    start: 09/2018
+    end: 09/2020
+  validation_url: https://aw.certmetrics.com/amazon/public/verification.aspx
+  code: KZMW4WL21B44QN94
+
+- name: DevOps Tools Engineer
+  institute: Linux Professional Institute
+  period:
+    start: 09/2018
+    end: 09/2023
+  validation_url: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000397664/sfuy2nckbr
+  code: LPI000397664
+
+- name: Zend Certified PHP Engineer
+  institute: Zend Technologies
+  period:
+    start: 02/2016
+    end: "∞"
+  validation_url: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000397664/sfuy2nckbr
+  code: LPI000397664

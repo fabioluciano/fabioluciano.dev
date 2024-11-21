@@ -1,0 +1,104 @@
+basics:
+  name: Fábio Luciano Nogueira de Góis
+  label: Arquiteto de Solução
+  email: ola@fabioluciano.dev
+  phome: +55 61 981455884
+  url: https://fabioluciano.dev
+  summary: Arquiteto de Solução. Cursando Ciência da Computação na UFU. Graduando em Ciência da Computação (CC) na UFRN.
+  location:
+    countryCode: BR
+    region: Brasília
+  profiles:
+    - network: github
+      username: fabioluciano
+      url: https://github.com/fabioluciano
+    - network: linkedin
+      username: fabioluciano
+      url: https://www.linkedin.com/in/fabioluciano/
+    - network: twitter
+      username: fabioluciano
+      url: https://twitter.com/fabioluciano
+    - network: telegram
+      username: fabioluciano
+      url: https://t.me/fabioluciano
+education:
+  - institution: Pontifícia Universidade Católica de Minas Gerais
+    studyType: Pós-Graduação
+    startDate: "2019"
+    courses:
+      - Arquitetura de Software Distribuído
+  - institution: Centro Universitário IESB
+    studyType: Graduação
+    startDate: "2012"
+    endDate: "2014"
+    courses:
+      - Análise e Desenvolvimento de Sistemas
+  - institution: Centro Universitário IESB
+    level: Extensão
+    startDate: "2013"
+    endDate: "2013"
+    courses:
+      - Suporte de Tecnologia da Informação
+  - institution: Centro Universitário IESB
+    level: Extensão
+    startDate: "2012"
+    endDate: "2012"
+    courses:
+      - Análise e Projeto de Sistemas
+certificates:
+  - name: Kubestronaut
+    issuer: Cloud Native Computing Foundation
+    date: "2024-11-19"
+    url: https://www.credly.com/badges/c2c49eb5-1ad9-4221-9244-b74b41902ac0/public_url
+    code: LF-3p8x4h8k9y
+  - name: Certified Kubernetes Security Specialist
+    issuer: Cloud Native Computing Foundation
+    date: "2024-11-19"
+    url: https://training.linuxfoundation.org/certification/verify/
+    code: LF-7jsua78wls
+  - name: Certified Kubernetes Administrator
+    issuer: Cloud Native Computing Foundation
+    date: "2024-10-22"
+    url: https://training.linuxfoundation.org/certification/verify/
+    code: LF-3p8x4h8k9y
+  - name: Certified Kubernetes Application Developer
+    issuer: Cloud Native Computing Foundation
+    date: "2024-09-24"
+    url: https://training.linuxfoundation.org/certification/verify/
+    code: LF-5offxxtx08
+  - name: Kubernetes and Cloud Native Associate
+    issuer: Cloud Native Computing Foundation
+    date: "2024-10-26"
+    url: https://training.linuxfoundation.org/certification/verify/
+    code: LF-ave7twx7wn
+  - name: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services
+    date: "2018-10-10"
+    url: https://aw.certmetrics.com/amazon/public/verification.aspx
+    code: EZE0CYJ2KB4QQ094
+  - name: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services
+    date: "2018-09-10"
+    url: https://aw.certmetrics.com/amazon/public/verification.aspx
+    code: KZMW4WL21B44QN94
+  - name: DevOps Tools Engineer
+    issuer: Linux Professional Institute
+    date: "2018-09-09"
+    url: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000397664/sfuy2nckbr
+    code: LPI000397664
+  - name: Zend Certified PHP Engineer
+    institute: Zend Technologies
+    date: "2016-02-01"
+    url: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000397664/sfuy2nckbr
+    code: LPI000397664
+languages:
+  - name: Português
+    fluency: Nativo
+  - name: Inglês
+    fluency: Avançado
+  - name: Espanhol
+    fluency: Intermediário
+projects:
+  -
+# skills:
+# work:
