@@ -7,6 +7,16 @@ ifdef::backend-pdf[]
 endif::[]
 
 --
+**Kubestronaut** +
+icon:building[title="Issuer"] Cloud Native Computing Foundation icon:calendar[title="Period"] 11/2024 - 11/2026 icon:key[title="License"] {link-certification-credly-kubestronaut}[credly, role="external", window="_blank"]
+--
+
+--
+**Certified Kubernetes Security Specialist** +
+icon:building[title="Issuer"] Cloud Native Computing Foundation icon:calendar[title="Period"] 11/2024 - 11/2026 icon:key[title="License"] {link-certification-cncf}[LF-7jsua78wls, role="external", window="_blank"]
+--
+
+--
 **Certified Kubernetes Administrator** +
 icon:building[title="Issuer"] Cloud Native Computing Foundation icon:calendar[title="Period"] 10/2024 - 10/2026 icon:key[title="License"] {link-certification-cncf}[LF-3p8x4h8k9y, role="external", window="_blank"]
 --
