@@ -4,3 +4,4 @@
 
 [![semantic-release](https://github.com/fabioluciano/me.fabioluciano.dev/actions/workflows/semantic-release.yaml/badge.svg)](https://github.com/fabioluciano/me.fabioluciano.dev/actions/workflows/semantic-release.yaml)
 
+
