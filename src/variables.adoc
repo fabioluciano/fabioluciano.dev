@@ -44,6 +44,7 @@
 :link-certification-lpic-ot-site: https://cs.lpi.org/caf/Xamman/certification/verify/LPI000397664/sfuy2nckbr
 :link-certification-aws: https://aw.certmetrics.com/amazon/public/verification.aspx
 :link-certification-cncf: https://training.linuxfoundation.org/certification/verify/
+:link-certification-credly-kubestronaut: https://www.credly.com/badges/c2c49eb5-1ad9-4221-9244-b74b41902ac0/public_url
 
 
 :link-fabrica-ideias: http://www.fabricadeideias.com.br/
