@@ -18,7 +18,7 @@ jobs:
         run: |
           asciidoctor -o ./output/en/index.html -a toc=left -a docinfo=shared src/resume-en.adoc
       - name: Send generated output files to cache
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: output
           path: output
@@ -42,7 +42,7 @@ jobs:
         run: |
           asciidoctor-pdf -a with_activities=false -a allow-uri-read -a pdf-theme=src/resources/themes/default-theme.yml -a pdf-fontsdir=src/resources/fonts -o ./output/en/resume-condensed-raw.pdf src/resume-en.adoc
       - name: Send generated output files to cache
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: output
           path: output
@@ -52,7 +52,7 @@ jobs:
     needs: create-pdf-files
     steps:
       - name: Recover generated files from cache
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: output
           path: output
@@ -81,7 +81,7 @@ jobs:
           output: "output/en/resume-condensed.pdf"
           arbitrary-parameters: "-sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dPrinted=false -dNOPAUSE -dQUIET -dBATCH"
       - name: Send generated output files to cache
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: output
           path: output
@@ -93,7 +93,7 @@ jobs:
       - optimize-pdf
     steps:
       - name: Recover generated files from cache
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: output
           path: output
