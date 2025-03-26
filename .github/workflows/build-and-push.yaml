@@ -47,6 +47,7 @@ jobs:
         with:
           name: output
           path: output
+          overwrite: true
 
   optimize-pdf:
     runs-on: ubuntu-latest
