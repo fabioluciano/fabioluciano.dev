@@ -21,7 +21,7 @@
 
 :skype-id: fabiolucianodf
 :telephone: 55 (61) 981455884
-:email: ola@fabioluciano.dev
+:email: fabio@naoimporta.com
 :facebook: fabioluciano
 :instagram: fabioluciano
 :twitter: fabioluciano
