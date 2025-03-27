@@ -87,6 +87,7 @@ jobs:
         with:
           name: output
           path: output
+          overwrite: true
 
   publish-to-github-pages:
     runs-on: ubuntu-latest
