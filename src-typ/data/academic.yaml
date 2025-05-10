@@ -1,0 +1,27 @@
+- institution: Pontifícia Universidade Católica de Minas Gerais
+  level: Pós Graduação
+  course: Arquitetura de Software Distribuído
+  period:
+    start: 2019
+    end: ""
+
+- institution: Centro Universitário IESB
+  level: Graduação
+  course: Análise e Desenvolvimento de Sistemas
+  period:
+    start: 2012
+    end: 2014
+
+- institution: Centro Universitário IESB
+  level: Extensão
+  course: Suporte de Tecnologia da Informação
+  period:
+    start: 2013
+    end: 2013
+
+- institution: Centro Universitário IESB
+  level: Extensão
+  course: Análise e Projeto de Sistemas
+  period:
+    start: 2012
+    end: 2012

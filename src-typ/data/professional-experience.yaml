@@ -1,0 +1,140 @@
+- company: MATERA
+  unit: Digital Twin
+  title: Analista DevOps Sênior
+  period:
+    start: 03/2023
+    end: ""
+  summary: |
+    Desenvolvimento e implementação de soluções em nuvem e Kubernetes utilizando Terraform; configuração de pipelines CI/CD (Jenkins, Tekton) e automação com Groovy e Python.
+  activities:
+    - Projetar, desenvolver e implantar soluções baseadas em núvem utilizando  os principais provedores de serviços em cloud do mercado;
+    - Projetar, desenvolver e implantar soluções baseadas em `Kubernetes` ;
+    - Criação de infraestrutura como código utilizando o Terraform para implantação de soluções utilizadas;
+    - Implantação e configuração de ferramentas de integração e entrega contínua em ambiente empresarial (`Jenkins`, `Tekton`, `SonarQube, Sonatype Nexus`, `Gitlab`, etc.);
+    - Implementação e implantação da automatização de configurações e propriedades em ferramentas utilizando `Apache Groovy`, `ShellScript`, `Python`` ou qualquer outra linguagem;
+    - Definição de processos de integração/entrega contínua de aplicações, bem como atendimento de requisitos mínimos de segurança e qualidade em aplicações;
+    - Orquestração do processo de integração/entrega contínua utilizando ferramentas (`Jenkins`, `Tekton`, `SonarQube, Sonatype Nexus`, `Gitlab`, etc.);
+    - Execuções de provas de conceitos(POCs/MVPs), de esteiras de verificação e validação contínua para diversos tiers/linguagens;
+    - Projetar, desenvolver e implantar soluções de monitoramento e observabilidade, utilizando ferramentas como `Prometheus`, `Grafana`, `AWS CloudWatch`,  entre outras. Além disso, criar dashboards e alertas para monitorar o desempenho e a saúde dos aplicativos implantados.
+
+- company: ActDigital
+  unit: Bradesco
+  title: Tech Lead
+  period:
+    start: 07/2022
+    end: 01/2023
+  summary: |
+    Desenvolvimento e implementação de soluções em nuvem e Kubernetes utilizando Terraform; configuração de pipelines CI/CD (Jenkins, Tekton) e automação com Groovy e Python.
+  activities:
+    - Liderança técnica, auxiliando os colegas na execução das atividades, bem como projetar e atender os planos de desenvolvimento individuais;
+    - Condução de entrevistas para composição dos times internos dos clientes;
+    - Projeção de solução _multicloud_ para projetos internos dos clientes;
+    - Construção/Avaliação de plano de migração do _on premises_ para provedores de serviços cloud;
+
+- company: PicPay
+  unit: Developer Experience
+  title: Tech Lead
+  period:
+    start: 07/2020
+    end: 01/2022
+  summary: |
+    Desenvolvimento e implementação de soluções em nuvem e Kubernetes utilizando Terraform; configuração de pipelines CI/CD (Jenkins, Tekton) e automação com Groovy e Python.
+  activities:
+    - Liderança técnica, auxiliando os colegas na execução das atividades, bem como projetar e atender os planos de desenvolvimento individuais;
+    - Documentar e disseminar procedimentos e ferramental utilizado pelo time;
+    - Projetar, implementar e implantar a nova estratégia e ferramenta de implantação contínua da companhia utilizando `Helm` e `Harness`;
+    - Projetar, implementar e implantar a nova estratégia e ferramenta de integração contínua utilizando o `Tekton` Pipelines;
+    - Execuções de provas de conceitos(POCs/MVPs), de esteiras de verificação e validação contínua para diversos tiers/linguagens;
+    - Criação _playbooks_ utilizando `Ansible`, para auxiliar a migração de estratégias de integração e deploy contínuo;
+    - Apresentações de novas funcionalidades disponíveis nas ferramentas mantidas;
+    - Disseminação de boas práticas a cerca da construção e governança de código-fonte e `API` s;
+    - Implementação e implantação de ferramentas em linha de comando(`CLI`) para diminuição de _toil_.
+
+- company: SONDA
+  unit: Fábrica de Software
+  title: Arquiteto de Soluções
+  period:
+    start: 01/2018
+    end: 07/2020
+  summary: |
+    Desenvolvimento e implementação de soluções em nuvem e Kubernetes utilizando Terraform; configuração de pipelines CI/CD (Jenkins, Tekton) e automação com Groovy e Python.
+  activities:
+    - Criação de infraestrutura como código utilizando o Terraform e CloudFormation para implantação de soluções utilizadas por todos os clientes da Fábrica de Software;
+    - Implantação e configuração de ferramentas de integração e entrega contínua em ambiente empresarial (Jenkins, SonarQube, Sonatype Nexus, Gitlab, etc.);
+    - Análise, implantação e configuração de elementos para implantação de balanceamento de carga e escalabilidade em ferramentas de integração/entregra contínua e aplicações utilizando proxy reverso (HAProxy) e programaticamente, utilizando suas APIs.
+    - Implementação e implantação da automatização de configurações e propriedades em ferramentas utilizando Apache Groovy;
+    - Implantação do conceito de núvem privada para orquestração de recursos sob demanda;
+    - Implantação de nuvens privadas e aplicações utilizando infraestrutura como código (IaC), com Ansible, Fabric e Docker Compose;
+    - Composição de ambientes de integração/entrega contínua em ambientes distribuídos geograficamente;
+    - Definição de processos de integração/entrega contínua de aplicações, bem como definições de requisitos mínimos de segurança e qualidade em aplicações;
+    - Orquestração do processo de integração/entrega contínua utilizando ferramentas (Jenkins, SonarQube, Sonatype Nexus, Gitlab, etc.);
+    - Implantação da automatização de testes unitários(JUnit,PHPUnit, Karma, Jasmine), funcionais(Cucumber, Codeception, Behat, Cucumberjs) e de carga(JMeter) em aplicações empresariais;
+    - Projeto e implantação de soluções baseadas em núvem utilizando os provedores Amazon Web Services e Microsoft Azure;
+
+- company: CTIS
+  unit: Ministério da Ciência e Tecnologia
+  title: Arquiteto de Software
+  period:
+    start: 07/2016
+    end: 12/2017
+  summary: |
+    Desenvolvimento e implementação de soluções em nuvem e Kubernetes utilizando Terraform; configuração de pipelines CI/CD (Jenkins, Tekton) e automação com Groovy e Python.
+  activities:
+    - Desenvolvimento e manutenção de uma arquitetura arquitetura com microserviços;
+    - Implantação das ferramentas para orientar a implantação da filosofia DevOps no órgão;
+    - Análise dos logs dos microserviços, bem como a criação de gatilhos da stack de automação utilizando o LogStash;
+    - Monitoramento dos microserviços utilizando o Prometheus;
+    - Criação de pipelines de integração/entrega/qualidade contínua em projetos Java(JEE), Angular.js e PHP;
+    - Criação de containers Docker para orquestração dos microserviços;
+    - Implantação do balanceamento de carga e alta disponibilidade com o HaProxy;
+    - Implementação da implantação automatizada dos microserviços utilizando o Ansible;
+
+- company: CTIS
+  unit: Ministério do Desenvolvimento Indústria e Comércio
+  title: Arquiteto de Software
+  period:
+    start: 04/2016
+    end: 07/2016
+  summary: |
+    Desenvolvimento e implementação de soluções em nuvem e Kubernetes utilizando Terraform; configuração de pipelines CI/CD (Jenkins, Tekton) e automação com Groovy e Python.
+  activities:
+    - Desenvolvimento e manutenção de uma arquitetura orientada a serviços (SOA);
+    - Implementação arquitetural de sistemas utilizando Phalcon PHP, Symfony e Laravel;
+    - Implementação de componentes DAO para habilitação de reutilização em todas as arquiteturas;
+    - Desenvolvimento e implantação de uma arquitetura AngularJS;
+    - Documentação arquitetural de sistemas construídos;
+    - Documentação de implantação das aplicações;
+    - Manutenção e criação de Jobs no Jenkins;
+    - Estabelecimento de diretrizes de seguranças a serem seguidas pelos softwares desenvolvidos;
+    - Definição de políticas de qualidade a serem avaliadas pela análise estática;
+    - Monitoramento e manutenção de padrões de qualidade de software com o SonarQube;
+    - Gerenciamento de versões e candidatas usando o Sonatype Nexus;
+    - Criação de provas de conceitos de containerização de aplicações.
+
+- company: CTIS
+  unit: Ministério da Integração Nacional
+  title: Arquiteto de Software
+  period:
+    start: 03/2015
+    end: 12/2015
+  summary: |
+    Desenvolvimento e implementação de soluções em nuvem e Kubernetes utilizando Terraform; configuração de pipelines CI/CD (Jenkins, Tekton) e automação com Groovy e Python.
+  activities:
+    - Desenvolvimento e manutenção de arquiteturas orientadas a serviços (SOA);
+    - Desenvolvimento de duas arquiteturas para o Backend. Uma usando o Laravel para a construção de aplicações com PHP, e outra, em JAVA, utilizando o framework Spring;
+    - Desenvolvimento de uma arquitetura frontend utilizando AngularJS;
+    - Criação de uma ferramenta de scaffold de componentes AngularJs;
+    - Documentação arquitetural de sistemas construídos;
+    - Manutenção e criação de Jobs no Jenkins;
+
+- company: CTIS
+  unit: Ministério da Integração Nacional
+  title: Desenvolvedor PHP
+  period:
+    start: 02/2014
+    end: 03/2015
+  summary: |
+    Desenvolvimento e implementação de soluções em nuvem e Kubernetes utilizando Terraform; configuração de pipelines CI/CD (Jenkins, Tekton) e automação com Groovy e Python.
+  activities:
+    - Desenvolvimento e manutenção do backend de softwares em PHP, utilizando Zend, Symfony e Laravel como framework;
+    - Desenvolvimento e manutenação do frontend utilizando  HTML, Javascript (JQuery) e CSS.
