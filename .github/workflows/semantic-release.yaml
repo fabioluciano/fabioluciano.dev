@@ -4,22 +4,99 @@ on:
     branches:
       - main
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Setup Typst with Fonts
+        uses: ./.github/actions/setup-typst-fonts
+
+      - name: Install Python dependencies
+        run: pip3 install PyYAML
+
+      - name: Build resume assets
+        run: |
+          mkdir -p output/en output/ptbr
+          make all
+
+      - name: Create release assets
+        run: |
+          # Create release package with all formats
+          mkdir -p release-assets
+
+          # Copy PDFs with descriptive names
+          cp output/en/resume.pdf release-assets/fabio-luciano-resume-full-en.pdf
+          cp output/en/resume-onepage.pdf release-assets/fabio-luciano-resume-onepage-en.pdf
+          cp output/ptbr/resume.pdf release-assets/fabio-luciano-resume-full-pt.pdf
+          cp output/ptbr/resume-onepage.pdf release-assets/fabio-luciano-resume-onepage-pt.pdf
+
+          # Create zip package with all assets
+          cd release-assets
+          zip -r ../fabio-luciano-resume-complete.zip .
+          cd ..
+
+          echo "Created release assets:"
+          ls -la release-assets/
+          ls -la fabio-luciano-resume-complete.zip
+
+      # Create root index that redirects to Portuguese version
+      - name: Create root redirect
+        run: |
+          cat > output/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="pt-BR">
+          <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="refresh" content="0;url=/ptbr/">
+            <title>Redirecting...</title>
+          </head>
+          <body>
+            <p>Redirecting to <a href="/ptbr/">Portuguese version</a>...</p>
+          </body>
+          </html>
+          EOF
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: output
+
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
+
       - name: Install dependencies
         run: npm install semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/github
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: GITHUB_TOKEN=${GITHUB_TOKEN} npx semantic-release
+
+  deploy:
+    needs: release
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

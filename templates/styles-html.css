@@ -1,0 +1,75 @@
+/* Resume HTML - Tailwind CSS Base + Custom Styles */
+
+/* Nerd Fonts Symbols - loaded via @font-face in Makefile injection */
+.nf {
+  font-family: "Symbols Nerd Font", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-feature-settings: "liga" off;
+}
+
+/* Custom CSS for print and additional tweaks */
+@media print {
+  body {
+    font-size: 10pt;
+    background: white !important;
+    color: #1e293b !important;
+  }
+  
+  .dark\:bg-slate-800,
+  .dark\:bg-slate-700,
+  .dark\:bg-blue-900\/30 {
+    background-color: #f8fafc !important;
+  }
+  
+  .dark\:text-slate-100,
+  .dark\:text-slate-300,
+  .dark\:text-slate-400,
+  .dark\:text-blue-400,
+  .dark\:text-sky-400 {
+    color: inherit !important;
+  }
+  
+  a {
+    color: #1e293b !important;
+    text-decoration: none !important;
+  }
+  
+  .border-b-2,
+  .border-b,
+  .border {
+    border-color: #cbd5e1 !important;
+  }
+  
+  footer {
+    display: none !important;
+  }
+  
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #1e40af;
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

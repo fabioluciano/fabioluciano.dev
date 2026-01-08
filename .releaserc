@@ -13,6 +13,36 @@
     ["@semantic-release/github", {
       "successComment": false,
       "failComment": false,
+      "assets": [
+        {
+          "path": "fabio-luciano-resume-complete.zip",
+          "label": "Complete Resume Package (All Formats)"
+        },
+        {
+          "path": "release-assets/fabio-luciano-resume-full-en.pdf",
+          "label": "Resume Full Version (English)"
+        },
+        {
+          "path": "release-assets/fabio-luciano-resume-onepage-en.pdf",
+          "label": "Resume One Page (English)"
+        },
+        {
+          "path": "release-assets/fabio-luciano-resume-full-pt.pdf",
+          "label": "Currículo Versão Completa (Português)"
+        },
+        {
+          "path": "release-assets/fabio-luciano-resume-onepage-pt.pdf",
+          "label": "Currículo Uma Página (Português)"
+        },
+        {
+          "path": "release-assets/resume-data-en.json",
+          "label": "Resume Data (JSON - English)"
+        },
+        {
+          "path": "release-assets/resume-data-pt.json",
+          "label": "Dados do Currículo (JSON - Português)"
+        }
+      ]
     }]
   ]
 }
