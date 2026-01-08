@@ -90,7 +90,10 @@ THEME_SCRIPT := <script>function toggleTheme(){document.documentElement.classLis
 SEO_META_EN := <meta name=\"description\" content=\"Platform Engineer with 10+ years of experience. CNCF Kubestronaut. Specialized in IDP, DevEx, and Cloud Native technologies.\"><meta name=\"keywords\" content=\"Platform Engineer, Kubernetes, DevOps, Cloud Native, CNCF, Kubestronaut, IDP, DevEx\"><meta name=\"author\" content=\"Fabio Luciano\"><meta property=\"og:type\" content=\"profile\"><meta property=\"og:title\" content=\"Fabio Luciano - Platform Engineer\"><meta property=\"og:description\" content=\"Platform Engineer | CNCF Kubestronaut | DevEx Specialist\"><meta name=\"twitter:card\" content=\"summary\">
 SEO_META_PTBR := <meta name=\"description\" content=\"Platform Engineer com mais de 10 anos de experiência. CNCF Kubestronaut. Especializado em IDP, DevEx e tecnologias Cloud Native.\"><meta name=\"keywords\" content=\"Platform Engineer, Kubernetes, DevOps, Cloud Native, CNCF, Kubestronaut, IDP, DevEx\"><meta name=\"author\" content=\"Fabio Luciano\"><meta property=\"og:type\" content=\"profile\"><meta property=\"og:title\" content=\"Fabio Luciano - Platform Engineer\"><meta property=\"og:description\" content=\"Platform Engineer | CNCF Kubestronaut | DevEx Specialist\"><meta name=\"twitter:card\" content=\"summary\">
 
-html: html-en html-ptbr ## Generate all HTML files
+html: html-en html-ptbr copy-photo ## Generate all HTML files
+
+copy-photo: setup ## Copy photo to output directory for HTML
+	@if [ -f $(DATA_DIR)/photo.jpg ]; then cp $(DATA_DIR)/photo.jpg $(OUTPUT_DIR)/photo.jpg; fi
 
 html-en: setup ## Generate English HTML resume
 	@echo "$(YELLOW)Building English HTML resume (Tailwind)...$(NC)"
