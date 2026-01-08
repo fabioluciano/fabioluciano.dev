@@ -86,25 +86,33 @@ NERDFONT_CDN := <style>@font-face{font-family:\"Symbols Nerd Font\";src:url(\"ht
 # Theme toggle JavaScript
 THEME_SCRIPT := <script>function toggleTheme(){document.documentElement.classList.toggle(\"dark\");localStorage.setItem(\"theme\",document.documentElement.classList.contains(\"dark\")?\"dark\":\"light\")}(function(){const t=localStorage.getItem(\"theme\")||(window.matchMedia(\"(prefers-color-scheme:dark)\").matches?\"dark\":\"light\");if(t===\"dark\")document.documentElement.classList.add(\"dark\")})()</script>
 
+# Favicon links
+FAVICON_LINKS := <link rel=\"icon\" type=\"image/svg+xml\" href=\"../favicon.svg\"><link rel=\"icon\" type=\"image/x-icon\" href=\"../favicon.ico\"><link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\"><link rel=\"manifest\" href=\"../site.webmanifest\">
+
 # SEO Meta tags (injected during HTML post-processing)
 SEO_META_EN := <meta name=\"description\" content=\"Platform Engineer with 10+ years of experience. CNCF Kubestronaut. Specialized in IDP, DevEx, and Cloud Native technologies.\"><meta name=\"keywords\" content=\"Platform Engineer, Kubernetes, DevOps, Cloud Native, CNCF, Kubestronaut, IDP, DevEx\"><meta name=\"author\" content=\"Fabio Luciano\"><meta property=\"og:type\" content=\"profile\"><meta property=\"og:title\" content=\"Fabio Luciano - Platform Engineer\"><meta property=\"og:description\" content=\"Platform Engineer | CNCF Kubestronaut | DevEx Specialist\"><meta name=\"twitter:card\" content=\"summary\">
 SEO_META_PTBR := <meta name=\"description\" content=\"Platform Engineer com mais de 10 anos de experiência. CNCF Kubestronaut. Especializado em IDP, DevEx e tecnologias Cloud Native.\"><meta name=\"keywords\" content=\"Platform Engineer, Kubernetes, DevOps, Cloud Native, CNCF, Kubestronaut, IDP, DevEx\"><meta name=\"author\" content=\"Fabio Luciano\"><meta property=\"og:type\" content=\"profile\"><meta property=\"og:title\" content=\"Fabio Luciano - Platform Engineer\"><meta property=\"og:description\" content=\"Platform Engineer | CNCF Kubestronaut | DevEx Specialist\"><meta name=\"twitter:card\" content=\"summary\">
 
-html: html-en html-ptbr copy-photo ## Generate all HTML files
+html: html-en html-ptbr copy-assets ## Generate all HTML files
+
+copy-assets: copy-photo copy-favicons ## Copy all assets to output directory
 
 copy-photo: setup ## Copy photo to output directory for HTML
 	@if [ -f $(DATA_DIR)/photo.jpg ]; then cp $(DATA_DIR)/photo.jpg $(OUTPUT_DIR)/photo.jpg; fi
 
+copy-favicons: setup ## Copy favicons to output directory for HTML
+	@if [ -d assets ]; then cp assets/favicon.* assets/apple-touch-icon.png assets/site.webmanifest $(OUTPUT_DIR)/; fi
+
 html-en: setup ## Generate English HTML resume
 	@echo "$(YELLOW)Building English HTML resume (Tailwind)...$(NC)"
 	$(TYPST) compile --root . --input lang=en --features html --format html $(TEMPLATES_DIR)/resume-html.typ $(OUTPUT_DIR)/en/index.html
-	@python3 -c "import sys; css=open('$(CSS_FILE)').read(); html=open('$(OUTPUT_DIR)/en/index.html').read(); html=html.replace('</head>', '$(SEO_META_EN)$(NERDFONT_CDN)$(TAILWIND_SCRIPT)$(THEME_SCRIPT)<style>'+css+'</style></head>'); html=html.replace('<body>', '<body class=\"max-w-4xl mx-auto p-8 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300\">'); open('$(OUTPUT_DIR)/en/index.html','w').write(html)"
+	@python3 -c "import sys; css=open('$(CSS_FILE)').read(); html=open('$(OUTPUT_DIR)/en/index.html').read(); html=html.replace('</head>', '$(FAVICON_LINKS)$(SEO_META_EN)$(NERDFONT_CDN)$(TAILWIND_SCRIPT)$(THEME_SCRIPT)<style>'+css+'</style></head>'); html=html.replace('<body>', '<body class=\"max-w-4xl mx-auto p-8 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300\">'); open('$(OUTPUT_DIR)/en/index.html','w').write(html)"
 	@echo "$(GREEN)✓ Created $(OUTPUT_DIR)/en/index.html$(NC)"
 
 html-ptbr: setup ## Generate Portuguese HTML resume
 	@echo "$(YELLOW)Building Portuguese HTML resume (Tailwind)...$(NC)"
 	$(TYPST) compile --root . --input lang=pt --features html --format html $(TEMPLATES_DIR)/resume-html.typ $(OUTPUT_DIR)/ptbr/index.html
-	@python3 -c "import sys; css=open('$(CSS_FILE)').read(); html=open('$(OUTPUT_DIR)/ptbr/index.html').read(); html=html.replace('</head>', '$(SEO_META_PTBR)$(NERDFONT_CDN)$(TAILWIND_SCRIPT)$(THEME_SCRIPT)<style>'+css+'</style></head>'); html=html.replace('<body>', '<body class=\"max-w-4xl mx-auto p-8 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300\">'); open('$(OUTPUT_DIR)/ptbr/index.html','w').write(html)"
+	@python3 -c "import sys; css=open('$(CSS_FILE)').read(); html=open('$(OUTPUT_DIR)/ptbr/index.html').read(); html=html.replace('</head>', '$(FAVICON_LINKS)$(SEO_META_PTBR)$(NERDFONT_CDN)$(TAILWIND_SCRIPT)$(THEME_SCRIPT)<style>'+css+'</style></head>'); html=html.replace('<body>', '<body class=\"max-w-4xl mx-auto p-8 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300\">'); open('$(OUTPUT_DIR)/ptbr/index.html','w').write(html)"
 	@echo "$(GREEN)✓ Created $(OUTPUT_DIR)/ptbr/index.html$(NC)"
 
 # ─────────────────────────────────────────────────────────────────────
