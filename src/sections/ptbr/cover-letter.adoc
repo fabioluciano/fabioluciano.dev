@@ -1,9 +1,0 @@
-.Carta de Apresentação
-****
-Apaixonado por **Inovação Tecnológica** e **Software Livre**, sou graduado em **Análise e Desenvolvimento de Sistemas**, pós graduando em **Arquitetura de Software Distribuído**, possuo certificações na áreas de **Engenharia e Desenvolvimento de Software** e **Arquitetura de Soluções Cloud**. 
-Atualmente estou pesquisando tópicos relacionados a **Developer Experience**, **Developer Tools**, e outros assuntos correlacionados.
-
-Minha maior experiência e paixão é **Arquitetura de Soluções** utilizando os principais _vendors_(**AWS**, **Azure** e **GCP**) de **Cloud Computing** e implantações _on premises_. Possuo grande experiência em **Containerização** e **Orquestração** de aplicações(Kubernetes e Docker Swarm), sempre utilizando **Infraestrutura como Código(IaC)** para organizar seus recursos. Além disso, possuo grande experiência em projetar e implantar esteiras de **Integração Continua**, **Validação e Verificação Contínua**, e **Implantação contínua**
-
-No desenvolvimento de aplicações, possuo experiências nas linguagens **JAVA**, **Python**, **PHP**, **ECMAScript**, **GO**, **Rust** e **Shell Script**.
-****

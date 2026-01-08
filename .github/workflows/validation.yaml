@@ -1,0 +1,108 @@
+name: validation
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Typst with Fonts
+        uses: ./.github/actions/setup-typst-fonts
+
+      - name: Create output directories
+        run: mkdir -p output/en output/ptbr
+
+      # Install Python dependencies for JSON Resume validation
+      - name: Install Python dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip3 install jsonschema PyYAML
+
+      # Validate JSON Resume schema compliance
+      - name: Validate JSON Resume Schema
+        run: |
+          echo "Validating resume files against JSON Resume schema..."
+          python3 scripts/validate_resume.py --all
+          echo "All resume files are compliant with JSON Resume schema"
+
+      # Build all resume formats for validation
+      - name: Build all resume formats (after validation)
+        run: make build
+
+      # Verify output files were created
+      - name: Verify build outputs
+        run: |
+          echo "Checking generated files:"
+          find output -type f -name "*.pdf" -o -name "*.html" | sort
+
+          echo -e "\nFile sizes:"
+          find output -type f \( -name "*.pdf" -o -name "*.html" \) -exec ls -lh {} \;
+
+          echo -e "\nChecking for missing files:"
+          [ -f output/en/resume.pdf ] || echo "Missing: output/en/resume.pdf"
+          [ -f output/en/resume-onepage.pdf ] || echo "Missing: output/en/resume-onepage.pdf"
+          [ -f output/en/index.html ] || echo "Missing: output/en/index.html"
+          [ -f output/ptbr/resume.pdf ] || echo "Missing: output/ptbr/resume.pdf"
+          [ -f output/ptbr/resume-onepage.pdf ] || echo "Missing: output/ptbr/resume-onepage.pdf"
+          [ -f output/ptbr/index.html ] || echo "Missing: output/ptbr/index.html"
+
+          echo "Build verification complete"
+
+      # Validate YAML syntax and structure
+      - name: Validate YAML files
+        run: |
+          echo "Validating YAML syntax..."
+          python3 -c "import yaml; yaml.safe_load(open('data/common.yaml'))" && echo "common.yaml syntax is valid"
+          python3 -c "import yaml; yaml.safe_load(open('data/resume.en.yaml'))" && echo "resume.en.yaml syntax is valid"
+          python3 -c "import yaml; yaml.safe_load(open('data/resume.ptbr.yaml'))" && echo "resume.ptbr.yaml syntax is valid"
+
+      # Validate one-page PDFs have exactly 1 page
+      - name: Validate one-page PDFs
+        run: |
+          # Install poppler-utils for pdfinfo
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+
+          echo "Validating one-page PDFs..."
+
+          # Check English one-page PDF
+          if [ -f output/en/resume-onepage.pdf ]; then
+            EN_PAGES=$(pdfinfo output/en/resume-onepage.pdf | grep "Pages:" | awk '{print $2}')
+            echo "English one-page PDF has $EN_PAGES page(s)"
+            if [ "$EN_PAGES" != "1" ]; then
+              echo "FAILURE: English one-page PDF has $EN_PAGES pages instead of 1!"
+              echo "The resume-onepage.typ template must generate exactly 1 page."
+              exit 1
+            fi
+            echo "English one-page PDF validation passed"
+          else
+            echo "FAILURE: English one-page PDF not found!"
+            exit 1
+          fi
+
+          # Check Portuguese one-page PDF
+          if [ -f output/ptbr/resume-onepage.pdf ]; then
+            PTBR_PAGES=$(pdfinfo output/ptbr/resume-onepage.pdf | grep "Pages:" | awk '{print $2}')
+            echo "Portuguese one-page PDF has $PTBR_PAGES page(s)"
+            if [ "$PTBR_PAGES" != "1" ]; then
+              echo "FAILURE: Portuguese one-page PDF has $PTBR_PAGES pages instead of 1!"
+              echo "The resume-onepage.typ template must generate exactly 1 page."
+              exit 1
+            fi
+            echo "Portuguese one-page PDF validation passed"
+          else
+            echo "FAILURE: Portuguese one-page PDF not found!"
+            exit 1
+          fi
+
+          echo "All one-page PDFs validated successfully!"

@@ -1,8 +1,28 @@
+# Output directory
+output/
+.claude
+
+# Generated files
 *.pdf
-*.pyc
-output
-.vscode
-src/resources/data/*.adoc
-*.env
+
+# OS files
 .DS_Store
-.idea
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Python
+*.pyc
+__pycache__/
+
+# Environment
+*.env
